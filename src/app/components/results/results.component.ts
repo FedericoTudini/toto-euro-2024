@@ -33,8 +33,8 @@ export class ResultsComponent implements OnInit {
 
   }
 
-  public reset() {
-    this.matchesFiltered = this.matches
+  public reset(stage: string) {
+    this.matchesFiltered = this.matches.filter((m: any) => m.stage === stage)
   }
 
 }
