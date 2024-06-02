@@ -25,6 +25,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { FormatDatePipe } from './pipes/format-date.pipe';
 import { MatTableModule } from '@angular/material/table';
 import { ScorersComponent } from './components/scorers/scorers.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatInputModule} from '@angular/material/input';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -52,7 +55,10 @@ import { ScorersComponent } from './components/scorers/scorers.component';
     MatDividerModule,
     MatCardModule,
     MatGridListModule,
-    MatTableModule
+    MatTableModule,
+    MatInputModule,
+    MatExpansionModule,
+    MatChipsModule
   ],
   providers: [
     provideClientHydration(),

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatchesService } from '../../services/matches.service';
+import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-results',
@@ -9,6 +10,8 @@ import { MatchesService } from '../../services/matches.service';
 export class ResultsComponent implements OnInit {
 
   public matches: any[] = []
+  public matchesFiltered: any[] = []
+  @ViewChild(MatAccordion) accordion!: MatAccordion;
 
   constructor(private matchesService: MatchesService) {}
 
@@ -19,10 +22,19 @@ export class ResultsComponent implements OnInit {
   public loadData() {
     this.matchesService.getMatches().subscribe(
       (data : any) => {
-        console.log(data.matches.filter((m: any) => m.group === 'GROUP_A'))
-        this.matches = data.matches.filter((m: any) => m.stage === 'GROUP_STAGE')
+        this.matches = data.matches
+        this.matchesFiltered = this.matches.filter((m: any) => m.stage === 'GROUP_STAGE')
       }
     )
+  }
+
+  public filterGroup(group: string) {
+    this.matchesFiltered = this.matches.filter((m: any) => m.stage === 'GROUP_STAGE' && m.group === `GROUP_${group}`)
+
+  }
+
+  public reset() {
+    this.matchesFiltered = this.matches
   }
 
 }

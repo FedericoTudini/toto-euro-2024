@@ -26,7 +26,7 @@
 .column-container {
   display: flex;
   flex-direction: row;
-  height: 130px;
+  height: 100px;
 }
 
 .column {
@@ -41,16 +41,53 @@ p {
 }
 
 #container {
-  width: 100px;
-  height: 60px;
+  width: 90px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 #container img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+mat-card-title {
+  font-size: 1.0rem;
+}
+mat-card-subtitle {
+  font-size: 0.75rem;
+}
+
+.example-action-buttons {
+  padding-bottom: 20px;
+}
+
+::ng-deep .mat-expansion-panel-body {
+  padding: 0px 5px !important;
+}
+
+.chips-container {
+  padding: 5px 15px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+}
+
+.chips-container mat-chip {
+  margin-left: 4px;
+}
+
+.chips-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  width: 100%;
 }
