@@ -45,7 +45,7 @@ interface Scorer {
 })
 export class ScorersComponent implements OnInit {
 
-  public displayedColumns: string[] = [ 'name', 'team', 'goals', 'penalties'];
+  public displayedColumns: string[] = [ 'name', 'team', 'goals'];
   public dataSource!: MatTableDataSource<Scorer>;
   public scorersList: any[] = [];
 
