@@ -10,12 +10,12 @@ export class FormatGroupNamePipe implements PipeTransform {
       return value;
     }
     // Converti la stringa in minuscolo e sostituisci i caratteri di underscore con spazi
-    let formattedValue = value.toLowerCase().replace(/_/g, ' ');
+    //let formattedValue = value.toLowerCase().replace(/_/g, ' ');
     // Capitalizza la prima lettera di ogni parola
-    formattedValue = formattedValue.replace(/\b\w/g, char => char.toUpperCase());
+    //formattedValue = formattedValue.replace(/\b\w/g, char => char.toUpperCase());
     // Rimpiazza "Group" con "Gruppo"
-    formattedValue = formattedValue.replace('Group', 'Gruppo');
-    return formattedValue;
+    //formattedValue = formattedValue.replace('Group', 'Gruppo');
+    return value.slice(-1);
   }
 
 }

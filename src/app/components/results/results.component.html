@@ -1,9 +1,42 @@
 <div style="padding: 10px 10px;">
+  <div>
+    <h1 style="color: #fff; font-weight: bold; margin: 10px 10px; font-size: 2.4rem; letter-spacing: .15rem;">Risultati</h1>
+  </div>
+  <div *ngFor="let match of matchesFiltered" style="display: flex; align-items: center; justify-content: center;">
+    <div class="match-container">
+      <div class="group-container">
+        <p class="team-name-label">{{ match.group | formatGroupName}}</p>
+      </div>
+      <div class="flags-container">
+        <div id="container">
+          <img
+            src="../../../assets/png/{{ match.homeTeam.id }}.png"
+          />
+        </div>
+        <div id="container">
+          <img
+            src="../../../assets/png/{{ match.awayTeam.id }}.png"
+          />
+        </div>
+      </div>
+      <div class="team-name-container">
+        <p class="team-name-label">{{ match.homeTeam.name }}</p>
+        <p class="team-name-label">{{ match.awayTeam.name }}</p>
+      </div>
+      <div class="score-container">
+        <p class="score-text">0</p>
+        <p class="score-text">0</p>
+      </div>
+      <div class="time-container">
+        <p class="time-label">90'</p>
+      </div>
+    </div>
+  </div>
   <!-- <div class="example-action-buttons">
     <button mat-button (click)="accordion.openAll()">Espandi tutto</button>
     <button mat-button (click)="accordion.closeAll()">Chiudi tutto</button>
   </div> -->
-  <mat-expansion-panel expanded="true">
+  <!-- <mat-expansion-panel expanded="true">
     <mat-expansion-panel-header>
       <mat-panel-title> Fase a Gironi </mat-panel-title>
     </mat-expansion-panel-header>
@@ -67,5 +100,6 @@
         </mat-card-footer>
       </mat-card>
     </div>
-  </mat-expansion-panel>
+  </mat-expansion-panel> -->
+  
 </div>

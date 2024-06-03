@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatchesService } from '../../services/matches.service';
 
@@ -43,7 +43,7 @@ interface Scorer {
   templateUrl: './scorers.component.html',
   styleUrl: './scorers.component.scss'
 })
-export class ScorersComponent implements OnInit {
+export class ScorersComponent implements AfterViewInit {
 
   public displayedColumns: string[] = [ 'name', 'team', 'goals'];
   public dataSource!: MatTableDataSource<Scorer>;
@@ -53,7 +53,7 @@ export class ScorersComponent implements OnInit {
     
   }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     this.loadScorers()
     
   }

@@ -10,6 +10,18 @@ body {
 }
 
 .mat-sidenav-content {
-    background: rgb(34,193,195);
-    background: linear-gradient(305deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background-color: #14142b;
+}
+
+::ng-deep .mat-toolbar {
+  background-color: #14142b;
+}
+
+.mat-toolbar.mat-primary {
+  background: #14142b;
+  color: #fff;
+}
+
+.white-icon {
+  color: #fff;
 }
