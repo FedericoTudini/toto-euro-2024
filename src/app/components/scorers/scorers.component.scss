@@ -1,8 +1,19 @@
-::ng-deep .mat-mdc-card-content .mat-mdc-card {
+.mat-mdc-card-content .mat-mdc-card {
     padding: 5px 5px !important;
-    background-color: #222232;
+    background-color: #222232 !important;
 }
 
-::ng-deep .mat-cell {
-    color: white;
+mat-card {
+    background-color: #222232 !important;
+}
+
+.custom-table {
+    background-color: #222232 !important;
+    /* Cambia il colore di sfondo della tabella */
+    color: #fff !important;
+    /* Cambia il colore del testo della tabella */
+}
+
+mat-row {
+    color: #fff !important;
 }

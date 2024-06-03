@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatchesService } from '../../services/matches.service';
 
@@ -41,7 +41,8 @@ interface Scorer {
 @Component({
   selector: 'app-scorers',
   templateUrl: './scorers.component.html',
-  styleUrl: './scorers.component.scss'
+  styleUrl: './scorers.component.scss',
+  encapsulation: ViewEncapsulation.None
 })
 export class ScorersComponent implements AfterViewInit {
 
