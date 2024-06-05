@@ -28,6 +28,7 @@ import { ScorersComponent } from './components/scorers/scorers.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatInputModule} from '@angular/material/input';
 import {MatChipsModule} from '@angular/material/chips';
+import { MatchCardComponent } from './components/results/match-card/match-card.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import {MatChipsModule} from '@angular/material/chips';
     FlagComponent,
     FormatDatePipe,
     ScorersComponent,
+    MatchCardComponent,
     
   ],
   imports: [

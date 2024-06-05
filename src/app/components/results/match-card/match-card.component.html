@@ -1,0 +1,24 @@
+<div class="match-container">
+  <div class="group-container">
+    <p class="team-name-label">{{ match.group | formatGroupName }}</p>
+  </div>
+  <div class="flags-container">
+    <div id="container">
+      <img src="../../../assets/png/{{ match.homeTeam.id }}.png" />
+    </div>
+    <div id="container">
+      <img src="../../../assets/png/{{ match.awayTeam.id }}.png" />
+    </div>
+  </div>
+  <div class="team-name-container">
+    <p class="team-name-label">{{ match.homeTeam.name }}</p>
+    <p class="team-name-label">{{ match.awayTeam.name }}</p>
+  </div>
+  <div class="score-container">
+    <p class="score-text">0</p>
+    <p class="score-text">0</p>
+  </div>
+  <div class="time-container">
+    <p class="time-label">{{ getTime(match) }}</p>
+  </div>
+</div>
