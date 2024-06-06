@@ -1,1 +1,24 @@
-<p>predictions works!</p>
+<div>
+  <div>
+    <h1
+      style="
+        color: #fff;
+        font-weight: bold;
+        margin: 5px 10px;
+        font-size: 2.4rem;
+      "
+    >
+      Pronostici
+    </h1>
+  </div>
+  <div style="margin: 0px 10px;">
+    <mat-chip-set>
+        <mat-chip>Partite</mat-chip>
+        <mat-chip>Gironi</mat-chip>
+        <mat-chip>Squadre</mat-chip>
+      </mat-chip-set>
+  </div>
+  <div *ngFor="let match of matches" style="display: flex; flex-direction: column; justify-content: center; margin: 0px 10px;">
+    <div class="match-container"></div>
+  </div>
+</div>

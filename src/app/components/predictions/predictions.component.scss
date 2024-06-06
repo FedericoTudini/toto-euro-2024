@@ -1,0 +1,19 @@
+.match-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #222232;
+  width: 100%;
+  height: 150px;
+  margin: 8px 0px 8px 0px;
+  padding: 8px 0px 8px 0px;
+  border-radius: 10px;
+}
+
+mat-chip-set mat-chip  {
+  background-color: #246BFD;
+  color: white;
+}
+
+mat-chip-set mat-chip span  {
+  color: white;
+}

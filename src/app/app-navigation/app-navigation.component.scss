@@ -11,8 +11,16 @@ mat-nav-list a {
   color: white !important;
 }
 
+::ng-deep .mdc-list-item__primary-text {
+  color: white !important;
+}
+
 .sidenav .mat-toolbar {
   background: inherit;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .mat-toolbar.mat-primary {
@@ -37,7 +45,7 @@ img {
 }
 
 #container-sidenav {
-  width: 100px;
+  width: 36px;
   height: 45px;
   display: flex;
   flex-direction: column;
