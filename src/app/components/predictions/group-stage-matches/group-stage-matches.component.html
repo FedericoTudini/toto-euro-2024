@@ -1,0 +1,74 @@
+<div class="card-container">
+  <mat-card *ngFor="let match of matches" class="example-card">
+    <!-- <mat-card-header>
+      <mat-card-title>{{ match.group | formatGroupName }}</mat-card-title>
+      <mat-card-subtitle
+        >{{ match.status }} -
+        {{ match.utcDate | formatDate }}</mat-card-subtitle
+      >
+    </mat-card-header> -->
+    <mat-card-content>
+      <div class="column-container">
+        <div class="side-column column">
+          <div id="container">
+            <img src="../../../assets/png/{{ match.homeTeam.id }}.png" alt="" />
+          </div>
+          <p style="font-size: 1rem; margin: 0px 0px">
+            {{ match.homeTeam.name }}
+          </p>
+        </div>
+        <div class="center-column column">
+          <p style="font-size: 2.3em; margin: 0px 0px">0</p>
+          <p style="font-size: 0.9em; margin: 0px 0px">:</p>
+          <p style="font-size: 2.3em; margin: 0px 0px">0</p>
+        </div>
+        <div class="side-column column">
+          <div id="container">
+            <img src="../../../assets/png/{{ match.awayTeam.id }}.png" alt="" />
+          </div>
+          <p style="font-size: 1rem; margin: 0px 0px">
+            {{ match.awayTeam.name }}
+          </p>
+        </div>
+      </div>
+      <mat-divider style="padding: 5px 0px"></mat-divider>
+      <!-- Pronostici giocatori -->
+      <div class="players-grid">
+        <div
+          *ngFor="let player of playerPredictions"
+          class="prediction-container"
+        >
+          <div>
+            <p>{{ player.name }}</p>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            "
+          >
+            <div
+              style="padding: 0px 5px; border-radius: 5px"
+              [style.backgroundColor]="
+                calculateColorScore(match, player.predictions?.groupStage!)
+              "
+            >
+              <p>
+                {{
+                  getPlayerPrediction(match.id, player.predictions?.groupStage!)
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-footer>
+      <mat-progress-bar
+        *ngIf="match.status === 'IN_PLAY'"
+        mode="buffer"
+      ></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
+</div>

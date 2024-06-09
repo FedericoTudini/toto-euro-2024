@@ -1,5 +1,5 @@
 import { Predictions } from './../../interfaces/predictions';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MatchesService } from '../../services/matches.service';
 import { playersData } from '../../data/players-data';
 
@@ -29,12 +29,6 @@ export class PredictionsComponent implements OnInit {
         // this.groupItemsByDate();
       }
     )
-  }
-
-  getPlayerPrediction(id: number, matchesPredictions: any[]) {
-    if (!matchesPredictions) return 'error'
-    let matchPrediction: any = matchesPredictions.find((match) => match.id === id)
-    return `${matchPrediction.score.fullTime.home}:${matchPrediction.score.fullTime.away}`
   }
 
 }

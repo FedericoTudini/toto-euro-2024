@@ -29,6 +29,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatInputModule} from '@angular/material/input';
 import {MatChipsModule} from '@angular/material/chips';
 import { MatchCardComponent } from './components/results/match-card/match-card.component';
+import { GroupStageMatchesComponent } from './components/predictions/group-stage-matches/group-stage-matches.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,7 @@ import { MatchCardComponent } from './components/results/match-card/match-card.c
     FormatDatePipe,
     ScorersComponent,
     MatchCardComponent,
+    GroupStageMatchesComponent,
     
   ],
   imports: [
@@ -60,7 +63,8 @@ import { MatchCardComponent } from './components/results/match-card/match-card.c
     MatTableModule,
     MatInputModule,
     MatExpansionModule,
-    MatChipsModule
+    MatChipsModule,
+    MatTabsModule
   ],
   providers: [
     provideClientHydration(),
