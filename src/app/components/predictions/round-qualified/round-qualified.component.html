@@ -1,0 +1,80 @@
+<div class="card-container">
+  <mat-card *ngFor="let player of playerPredictions" class="example-card">
+    <div>
+      <span>{{ player.name }}</span>
+    </div>
+    <mat-card-content>
+      <!-- Ottavi di Finale -->
+      <div>
+        <span>Ottavi</span>
+      </div>
+      <div
+        *ngIf="player.predictions.qualifiedRoundOfSixteen"
+        class="teams-grid"
+      >
+        <div
+          *ngFor="let team of player.predictions.qualifiedRoundOfSixteen"
+          class="prediction-container"
+        >
+          <span>{{ team.name }}</span>
+        </div>
+      </div>
+      <!-- Quarti -->
+      <div>
+        <span>Quarti</span>
+      </div>
+      <div
+        *ngIf="player.predictions.qualifiedRoundOfEight"
+        class="teams-grid"
+      >
+        <div
+          *ngFor="let team of player.predictions.qualifiedRoundOfEight"
+          class="prediction-container"
+        >
+          <span>{{ team.name }}</span>
+        </div>
+      </div>
+      <!-- Semi -->
+      <div>
+        <span>Semifinali</span>
+      </div>
+      <div
+        *ngIf="player.predictions.qualifiedSemifinals"
+        class="teams-grid"
+      >
+        <div
+          *ngFor="let team of player.predictions.qualifiedSemifinals"
+          class="prediction-container"
+        >
+          <span>{{ team.name }}</span>
+        </div>
+      </div>
+       <!-- Finale -->
+       <div>
+        <span>Finale</span>
+      </div>
+      <div
+        *ngIf="player.predictions.qualifiedFinal"
+        class="teams-grid"
+      >
+        <div
+          *ngFor="let team of player.predictions.qualifiedFinal"
+          class="prediction-container"
+        >
+          <span>{{ team.name }}</span>
+        </div>
+      </div>
+      <!-- Vincitore e Seconda -->
+      <div
+        *ngIf="player.predictions.winner && player.predictions.second"
+      >
+        <div
+          class="prediction-container"
+        >
+          <span>Vincitore: {{ player.predictions.winner.name }}</span>
+          <span>Seconda: {{ player.predictions.second.name }}</span>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

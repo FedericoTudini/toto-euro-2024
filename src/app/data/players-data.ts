@@ -727,7 +727,144 @@ export const playersData: Players[] = [
                         }
                     }
                 }
-            ]
+            ],
+            qualifiedRoundOfSixteen: [
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+            ],
+            qualifiedRoundOfEight: [
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+            ],
+            qualifiedSemifinals: [
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+            ],
+            qualifiedFinal: [
+                {
+                    id: 0,
+                    name: "France"
+                },
+                {
+                    id: 0,
+                    name: "France"
+                },
+            ],
+            winner: {
+                id: 0,
+                name: "France"
+            },
+            second: {
+                id: 0,
+                name: "Spain"
+            }
+            
         }
     },
     {
@@ -2919,7 +3056,7 @@ export const playersData: Players[] = [
     },
     {
         id: 5,
-        name: "Fede",
+        name: "Andrea",
         score: 0,
         predictions: {
             groupStage: [
@@ -5833,6 +5970,6 @@ export const playersData: Players[] = [
             ]
         }
     },
-    
+
 
 ]

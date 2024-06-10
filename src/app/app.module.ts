@@ -31,6 +31,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import { MatchCardComponent } from './components/results/match-card/match-card.component';
 import { GroupStageMatchesComponent } from './components/predictions/group-stage-matches/group-stage-matches.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { RoundQualifiedComponent } from './components/predictions/round-qualified/round-qualified.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     ScorersComponent,
     MatchCardComponent,
     GroupStageMatchesComponent,
+    RoundQualifiedComponent,
     
   ],
   imports: [

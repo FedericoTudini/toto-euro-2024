@@ -3,5 +3,8 @@ export interface Predictions {
     qualifiedRoundOfSixteen?: any[],
     qualifiedRoundOfEight?: any[],
     qualifiedSemifinals?: any[],
-    qualifiedFinal?: any[]
+    qualifiedFinal?: any[],
+    winner?: any,
+    second?: any,
+    bestScorer?: any,
 }
