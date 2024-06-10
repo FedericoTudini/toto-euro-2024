@@ -1,0 +1,18 @@
+<div>
+  <h6 class="title-section">Miglior Marcatore</h6>
+  <div class="card-container">
+    <mat-card *ngFor="let player of playerPredictions" class="example-card">
+      <mat-card-content
+        *ngIf="player.predictions?.winner?.name"
+        class="fk-row mat-elevation-z2"
+        style="padding: 5px 20px"
+      >
+        <div>
+          <span>{{ player.name }}</span>
+        </div>
+        <!-- esito -->
+        <div><span>Cristiano Ronaldo</span></div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

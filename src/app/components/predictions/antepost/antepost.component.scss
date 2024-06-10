@@ -1,0 +1,27 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-column-gap: 1rem; // optional
+    grid-row-gap: 1rem; // optional
+    margin-top: 10px;
+}
+
+.example-card {
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.fk-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+span {
+    color: black;
+}
+
+.title-section {
+    margin-top: 10px;
+    color: white;
+}

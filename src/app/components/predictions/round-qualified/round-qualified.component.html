@@ -1,13 +1,16 @@
 <div class="card-container">
   <mat-card *ngFor="let player of playerPredictions" class="example-card">
-    <div>
-      <span>{{ player.name }}</span>
-    </div>
+    <mat-card-header>
+      <div>
+        <span>{{ player.name }}</span>
+      </div>
+    </mat-card-header>
     <mat-card-content>
       <!-- Ottavi di Finale -->
-      <div>
+      <div class="fk-row">
         <span>Ottavi</span>
       </div>
+      <mat-divider style="padding-top: 7px"></mat-divider>
       <div
         *ngIf="player.predictions.qualifiedRoundOfSixteen"
         class="teams-grid"
@@ -16,63 +19,73 @@
           *ngFor="let team of player.predictions.qualifiedRoundOfSixteen"
           class="prediction-container"
         >
-          <span>{{ team.name }}</span>
+          <div class="fk-row" style="align-items: center">
+            <div id="container">
+              <img src="../../../assets/png/773.png" alt="" />
+            </div>
+            <span>{{ team.name }}</span>
+          </div>
         </div>
       </div>
       <!-- Quarti -->
-      <div>
+      <div class="fk-row">
         <span>Quarti</span>
       </div>
-      <div
-        *ngIf="player.predictions.qualifiedRoundOfEight"
-        class="teams-grid"
-      >
+      <mat-divider style="padding-top: 7px"></mat-divider>
+      <div *ngIf="player.predictions.qualifiedRoundOfEight" class="teams-grid">
         <div
           *ngFor="let team of player.predictions.qualifiedRoundOfEight"
           class="prediction-container"
         >
+        <div class="fk-row" style="align-items: center">
+          <div id="container">
+            <img src="../../../assets/png/773.png" alt="" />
+          </div>
           <span>{{ team.name }}</span>
+        </div>
         </div>
       </div>
       <!-- Semi -->
-      <div>
+      <div class="fk-row">
         <span>Semifinali</span>
       </div>
-      <div
-        *ngIf="player.predictions.qualifiedSemifinals"
-        class="teams-grid"
-      >
+      <mat-divider style="padding-top: 7px"></mat-divider>
+      <div *ngIf="player.predictions.qualifiedSemifinals" class="teams-grid">
         <div
           *ngFor="let team of player.predictions.qualifiedSemifinals"
           class="prediction-container"
         >
+        <div class="fk-row" style="align-items: center">
+          <div id="container">
+            <img src="../../../assets/png/773.png" alt="" />
+          </div>
           <span>{{ team.name }}</span>
         </div>
-      </div>
-       <!-- Finale -->
-       <div>
-        <span>Finale</span>
-      </div>
-      <div
-        *ngIf="player.predictions.qualifiedFinal"
-        class="teams-grid"
-      >
-        <div
-          *ngFor="let team of player.predictions.qualifiedFinal"
-          class="prediction-container"
-        >
-          <span>{{ team.name }}</span>
         </div>
       </div>
+      <!-- Finale -->
       <!-- Vincitore e Seconda -->
-      <div
-        *ngIf="player.predictions.winner && player.predictions.second"
-      >
-        <div
-          class="prediction-container"
-        >
-          <span>Vincitore: {{ player.predictions.winner.name }}</span>
-          <span>Seconda: {{ player.predictions.second.name }}</span>
+      <div *ngIf="player.predictions.winner && player.predictions.second">
+        <mat-divider style="padding-top: 7px"></mat-divider>
+        <div class="prediction-container">
+          <div class="fk-column">
+            <span>1°</span>
+            <div class="fk-row" style="align-items: center">
+              <div id="container">
+                <img src="../../../assets/png/773.png" alt="" />
+              </div>
+              <span>{{ player.predictions.winner.name }}</span>
+            </div>
+          </div>
+          <div class="fk-column">
+            <span>2°</span>
+            <div class="fk-row" style="align-items: center">
+              <div id="container">
+                <img src="../../../assets/png/760.png" alt="" />
+              </div>
+              <span>{{ player.predictions.second.name }}</span>
+            </div>
+          </div>
         </div>
       </div>
     </mat-card-content>
