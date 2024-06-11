@@ -4,6 +4,7 @@ import { Players } from '../../interfaces/players';
 import { playersData } from '../../data/players-data';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatchesService } from '../../services/matches.service';
+import { error } from 'console';
 
 @Component({
   selector: 'app-homepage',
@@ -17,6 +18,7 @@ export class HomepageComponent implements OnInit {
   public displayedColumns: string[] = ['position', 'name', 'score'];
   public dataSource!: MatTableDataSource<Players>;
   public matches!: any[];
+  public spinner: boolean = true;
 
   constructor(private matchesService: MatchesService, private chartService: ChartService) {
 
@@ -31,7 +33,8 @@ export class HomepageComponent implements OnInit {
       (data: any) => {
         this.matches = data.matches.filter((m: any) => m.stage === 'GROUP_STAGE')
         this.chartService.calculateTable(this.matches, playersData)
-      this.dataSource = new MatTableDataSource<Players>(this.playersData.sort((a: Players, b: Players) => b.score - a.score))
+        this.dataSource = new MatTableDataSource<Players>(this.playersData.sort((a: Players, b: Players) => b.score - a.score))
+        this.spinner = false
       }
     )
   }

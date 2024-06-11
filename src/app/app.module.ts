@@ -33,6 +33,7 @@ import { GroupStageMatchesComponent } from './components/predictions/group-stage
 import {MatTabsModule} from '@angular/material/tabs';
 import { RoundQualifiedComponent } from './components/predictions/round-qualified/round-qualified.component';
 import { AntepostComponent } from './components/predictions/antepost/antepost.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { AntepostComponent } from './components/predictions/antepost/antepost.co
     MatInputModule,
     MatExpansionModule,
     MatChipsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatProgressSpinnerModule
   ],
   providers: [
     provideClientHydration(),

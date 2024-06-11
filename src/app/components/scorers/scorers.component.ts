@@ -49,6 +49,7 @@ export class ScorersComponent implements AfterViewInit {
   public displayedColumns: string[] = [ 'name', 'team', 'goals'];
   public dataSource!: MatTableDataSource<Scorer>;
   public scorersList: any[] = [];
+  public spinner: boolean = true;
 
   constructor(private mathcesService: MatchesService) {
     
@@ -64,6 +65,7 @@ export class ScorersComponent implements AfterViewInit {
     this.mathcesService.getScorers().subscribe(
       (data: any) => {
         this.dataSource = new MatTableDataSource<Scorer>(data.scorers)
+        this.spinner = false
       }
     )
   }

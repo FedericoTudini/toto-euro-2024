@@ -1,17 +1,4 @@
-::ng-deep .mat-mdc-tab-labels {
-  background-color: white; /* Cambia il colore di sfondo */
-}
-
-::ng-deep .mat-tab-label {
-  font-weight: bold; /* Cambia il peso del carattere delle etichette */
-  font-size: 16px; /* Cambia la dimensione del carattere */
-}
-
-::ng-deep .mat-tab-label-active {
-  color: yellow; /* Cambia il colore dell'etichetta attiva */
-  border-bottom: 2px solid yellow; /* Cambia il bordo inferiore dell'etichetta attiva */
-}
-
-span {
+.label-tab-header {
   color: white;
+  background-color: red;
 }

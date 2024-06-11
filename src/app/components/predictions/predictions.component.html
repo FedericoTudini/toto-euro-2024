@@ -12,8 +12,8 @@
     </h1>
   </div>
   <div>
-    <mat-tab-group mat-stretch-tabs="true" [style.color]="'white'">
-      <mat-tab label="Gironi"><group-stage-matches [matches]="matches"> </group-stage-matches></mat-tab>
+    <mat-tab-group mat-stretch-tabs="true" >
+      <mat-tab labelClass="label-tab-header" label="Gironi"><group-stage-matches [matches]="matches"> </group-stage-matches></mat-tab>
       <mat-tab label="Knockout"><round-qualified></round-qualified></mat-tab>
       <mat-tab label="Antepost"><antepost></antepost></mat-tab>
     </mat-tab-group>

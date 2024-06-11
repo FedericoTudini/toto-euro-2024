@@ -1,4 +1,4 @@
-<div style="margin: 10px 10px;" class="mat-elevation-z8">
+<div style="margin: 10px 10px;" class="mat-elevation-z8" *ngIf="!spinner">
   <div>
     <h1 style="color: #fff; font-weight: bold; margin: 10px 10px; font-size: 2.4rem;">Marcatori</h1>
   </div>
@@ -42,4 +42,9 @@
       </mat-card-content>
     </mat-card>
   </div>
+
+  <div *ngIf="spinner" class="spinner-container">
+    <mat-spinner></mat-spinner>
+  </div>
+  
   
