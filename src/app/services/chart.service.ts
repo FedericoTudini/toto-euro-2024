@@ -6,6 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class ChartService {
 
+  /* Inserire come campi i risultati degli Antepost e dei Passaggi Turno */
+
   constructor() { }
 
   public calculateTable(matches: any[], playersData: Players[]) {
