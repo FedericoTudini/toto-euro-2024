@@ -1,18 +1,71 @@
-<div>
-  <h6 class="title-section">Miglior Marcatore</h6>
-  <div class="card-container">
-    <mat-card *ngFor="let player of playerPredictions" class="example-card">
-      <mat-card-content
-        *ngIf="player.predictions?.bestScorer?.name"
-        class="fk-row mat-elevation-z2"
-        style="padding: 5px 20px"
-      >
-        <div>
-          <span>{{ player.name }}</span>
+<div class="card-container">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div class="title-section mat-elevation-z4">
+        <span>Miglior Marcatore</span>
+      </div>
+    </mat-card-header>
+    <mat-card-content>
+      <div *ngFor="let player of playerPredictions" class="prediction-container fk-row">
+        <span class="player-tag">{{player.name}}</span>
+        <div class="fk-row" style="align-items: center; justify-content: center">
+          <span>Cristiano Ronaldo</span>
+          <div id="container" >
+            <img src="../../../assets/png/765.png" />
+          </div>
         </div>
-        <!-- esito -->
-        <div><span>{{ player.predictions?.bestScorer?.name }}</span></div>
-      </mat-card-content>
-    </mat-card>
-  </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div class="title-section mat-elevation-z4">
+        <span>Miglior Marcatore</span>
+      </div>
+    </mat-card-header>
+    <mat-card-content>
+      <div *ngFor="let player of playerPredictions" class="prediction-container fk-row">
+        <span class="player-tag">{{player.name}}</span>
+        <div class="fk-row" style="align-items: center; justify-content: center">
+          <span>Cristiano Ronaldo</span>
+          <div id="container" >
+            <img src="../../../assets/png/765.png" />
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div class="title-section mat-elevation-z4">
+        <span>Miglior Marcatore</span>
+      </div>
+    </mat-card-header>
+    <mat-card-content>
+      <div *ngFor="let player of playerPredictions" class="prediction-container fk-row">
+        <span class="player-tag">{{player.name}}</span>
+        <div class="fk-row" style="align-items: center; justify-content: center">
+          <span>Cristiano Ronaldo</span>
+          <div id="container" >
+            <img src="../../../assets/png/765.png" />
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <!-- <mat-card class="example-card">
+    <mat-card-header>
+      <div class="title-section mat-elevation-z4">
+        <span>Miglior Marcatore</span>
+      </div>
+    </mat-card-header>
+    <mat-card-content>
+      <div *ngFor="let player of playerPredictions" class="prediction-container fk-row" >
+        <span class="player-tag">{{player.name}}</span>
+        <div class="fk-row">
+          <span>Cristiano Ronaldo</span>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card> -->
 </div>

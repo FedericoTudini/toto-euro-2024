@@ -29,7 +29,7 @@ export class ResultsComponent implements OnInit {
       (data : any) => {
         this.matches = data.matches
         this.matchesFiltered = this.matches.filter((m: any) => m.stage === 'GROUP_STAGE')
-        this.todaysMatches = this.matches.filter((m: any) => isSameDay(parseISO(m.utcDate), new Date("06-14-2024")) ) 
+        this.todaysMatches = this.matches.filter((m: any) => isSameDay(parseISO(m.utcDate), new Date()) ) 
         this.isMatchday = this.todaysMatches.length > 0;
         this.groupItemsByDate();
       }

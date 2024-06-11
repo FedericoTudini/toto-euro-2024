@@ -31,9 +31,9 @@ export class HomepageComponent implements OnInit {
       (data: any) => {
         this.matches = data.matches.filter((m: any) => m.stage === 'GROUP_STAGE')
         this.chartService.calculateTable(this.matches, playersData)
+      this.dataSource = new MatTableDataSource<Players>(this.playersData.sort((a: Players, b: Players) => b.score - a.score))
       }
     )
-    this.dataSource = new MatTableDataSource<Players>(this.playersData)
   }
 
 }
