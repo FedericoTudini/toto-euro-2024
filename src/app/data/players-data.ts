@@ -1,6 +1,6 @@
 import { Players } from "../interfaces/players";
 
-export const playersData: Players[] = [
+export let playersData: Players[] = [
     {
         id: 1,
         name: "Fede",
@@ -22,7 +22,7 @@ export const playersData: Players[] = [
                     score: {
                         winner: null,
                         fullTime: {
-                            home: 0,
+                            home: 2,
                             away: 0
                         }
                     }
@@ -863,6 +863,10 @@ export const playersData: Players[] = [
             second: {
                 id: 0,
                 name: "Spain"
+            },
+            bestScorer: {
+                idTeam: 0,
+                name: "Cristiano Ronaldo"
             }
             
         }

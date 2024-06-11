@@ -3,7 +3,7 @@
   <div class="card-container">
     <mat-card *ngFor="let player of playerPredictions" class="example-card">
       <mat-card-content
-        *ngIf="player.predictions?.winner?.name"
+        *ngIf="player.predictions?.bestScorer?.name"
         class="fk-row mat-elevation-z2"
         style="padding: 5px 20px"
       >
@@ -11,7 +11,7 @@
           <span>{{ player.name }}</span>
         </div>
         <!-- esito -->
-        <div><span>Cristiano Ronaldo</span></div>
+        <div><span>{{ player.predictions?.bestScorer?.name }}</span></div>
       </mat-card-content>
     </mat-card>
   </div>

@@ -28,7 +28,7 @@ export class GroupStageMatchesComponent {
     let matchPrediction: any = matchesPredictions.find((m: any) => m.id === match.id)
     if (!match)  return 'black'
     if (!["IN_PLAY", "PAUSED", "FINISHED"].includes(match.status)) {
-      return "green"
+      return "transparent"
     }
     else {
       if (this.isSameWinner(match, matchPrediction)) {
