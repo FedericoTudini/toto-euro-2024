@@ -36,7 +36,7 @@ export class GroupStageMatchesComponent {
           return "green"
         }
         else {
-          return "grey"
+          return "#ff7900"
         }
       }
       else {

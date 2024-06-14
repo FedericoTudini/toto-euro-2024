@@ -7,4 +7,8 @@ export interface Predictions {
     winner?: any,
     second?: any,
     bestScorer?: any,
+    cleanSheetGroupStage?: any,
+    moreScorers?: any,
+    moreGoalsGroupStage?: any,
+    groupWithMoreGoals?: string 
 }
