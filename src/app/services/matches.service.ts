@@ -15,25 +15,15 @@ export class MatchesService {
 
   getMatches(): Observable<any> {
     let random = (Math.floor(10000 + Math.random() * 90000)).toString();
-    const headers = new HttpHeaders({
-      'X-Auth-Token': this.authToken,
-      'Cache-Control': 'no-cache, no-store, must-revalidate, post-check=0, pre-check=0',
-      'Pragma': 'no-cache',
-      'Expires': '0'
-    });
 
-    return this.httpClient.get(`${this.matchesUrl}`, { headers });
+
+    return this.httpClient.get(`${this.matchesUrl}`);
   }
 
   getScorers(): Observable<any> {
     const salt = (new Date()).getTime();
-    const headers = new HttpHeaders({
-      'X-Auth-Token': this.authToken,
-      'Cache-Control': 'no-cache, no-store, must-revalidate, post-check=0, pre-check=0',
-      'Pragma': 'no-cache',
-      'Expires': '0'
-    });
+    
 
-    return this.httpClient.get(`${this.scorersUrl}`, { headers });
+    return this.httpClient.get(`${this.scorersUrl}`);
   }
 }

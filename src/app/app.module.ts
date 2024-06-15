@@ -11,7 +11,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatchesService } from './services/matches.service';
-import { HttpHandler, HttpRequest, HttpClient, HttpInterceptor,HttpClientModule, provideHttpClient, withInterceptorsFromDi  } from '@angular/common/http';
+import { HttpHandler, HttpRequest, HttpClient, HttpInterceptor,HttpClientModule, provideHttpClient, withInterceptorsFromDi, HTTP_INTERCEPTORS  } from '@angular/common/http';
 import { MatCommonModule } from '@angular/material/core';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatDividerModule} from '@angular/material/divider';
@@ -35,6 +35,7 @@ import { RoundQualifiedComponent } from './components/predictions/round-qualifie
 import { AntepostComponent } from './components/predictions/antepost/antepost.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { TransformStatusPipe } from './pipes/transform-status.pipe';
+import { CacheInterceptorService } from './services/cache-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,7 @@ import { TransformStatusPipe } from './pipes/transform-status.pipe';
     GroupStageMatchesComponent,
     RoundQualifiedComponent,
     AntepostComponent,
-    TransformStatusPipe,
+    TransformStatusPipe
     
   ],
   imports: [
@@ -77,7 +78,8 @@ import { TransformStatusPipe } from './pipes/transform-status.pipe';
   providers: [
     provideClientHydration(),
     provideAnimationsAsync(), 
-    provideHttpClient(withInterceptorsFromDi())
+    provideHttpClient(withInterceptorsFromDi()),
+    { provide: HTTP_INTERCEPTORS, useClass: CacheInterceptorService, multi: true }
   ],
   bootstrap: [AppComponent]
 })
