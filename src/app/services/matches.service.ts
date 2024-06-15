@@ -15,7 +15,10 @@ export class MatchesService {
 
   getMatches(): Observable<any> {
     const headers = new HttpHeaders({
-      'X-Auth-Token': this.authToken
+      'X-Auth-Token': this.authToken,
+      'Cache-Control': 'no-cache, no-store, must-revalidate, post- check=0, pre-check=0',
+      'Pragma': 'no-cache',
+      'Expires': '0'
     });
 
     return this.httpClient.get(this.matchesUrl, { headers });
@@ -23,7 +26,10 @@ export class MatchesService {
 
   getScorers(): Observable<any> {
     const headers = new HttpHeaders({
-      'X-Auth-Token': this.authToken
+      'X-Auth-Token': this.authToken,
+      'Cache-Control': 'no-cache, no-store, must-revalidate, post- check=0, pre-check=0',
+      'Pragma': 'no-cache',
+      'Expires': '0'
     });
 
     return this.httpClient.get(this.scorersUrl, { headers });
