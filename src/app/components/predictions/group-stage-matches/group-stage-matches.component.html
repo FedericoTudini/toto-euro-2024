@@ -8,6 +8,7 @@
       >
     </mat-card-header> -->
     <mat-card-content>
+      <div style="height: 20px; display: flex;flex-direction: row; justify-content: center;"><span style="color: white; font-size: 11px;">{{match.status | transformStatus:match }}</span></div>
       <div class="column-container">
         <div class="side-column column">
           <div id="container">
@@ -18,9 +19,9 @@
           </p>
         </div>
         <div class="center-column column">
-          <p style="font-size: 2.3em; margin: 0px 0px">0</p>
+          <p style="font-size: 2.3em; margin: 0px 0px">{{ match.score.fullTime.home ? match.score.fullTime.home : 0}}</p>
           <p style="font-size: 0.9em; margin: 0px 0px">:</p>
-          <p style="font-size: 2.3em; margin: 0px 0px">0</p>
+          <p style="font-size: 2.3em; margin: 0px 0px">{{ match.score.fullTime.away ? match.score.fullTime.away : 0}}</p>
         </div>
         <div class="side-column column">
           <div id="container">
@@ -64,10 +65,10 @@
         </div>
       </div>
     </mat-card-content>
-    <mat-card-footer>
+    <mat-card-footer style="padding: 0px 50px; opacity: 0.5;">
       <mat-progress-bar
-        *ngIf="match.status === 'IN_PLAY'"
-        mode="buffer"
+        *ngIf="match.status === 'IN_PLAY' || match.status === 'PAUSED'"
+        mode="indeterminate" style="margin-top: 10px; "
       ></mat-progress-bar>
     </mat-card-footer>
   </mat-card>

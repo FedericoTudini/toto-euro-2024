@@ -65,6 +65,7 @@ export class ScorersComponent implements AfterViewInit {
     this.mathcesService.getScorers().subscribe(
       (data: any) => {
         this.dataSource = new MatTableDataSource<Scorer>(data.scorers)
+        
         this.spinner = false
       }
     )

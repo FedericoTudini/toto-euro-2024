@@ -15,10 +15,10 @@
     <p class="team-name-label">{{ match.awayTeam.name }}</p>
   </div>
   <div class="score-container">
-    <p class="score-text">0</p>
-    <p class="score-text">0</p>
+    <p class="score-text">{{ match.score.fullTime.home}}</p>
+    <p class="score-text">{{ match.score.fullTime.away}}</p>
   </div>
   <div class="time-container">
-    <p class="time-label">{{ getTime(match) }}</p>
+    <p class="time-label" [ngClass]="{'live': isLive(match)}">{{ getTime(match) }}</p>
   </div>
 </div>

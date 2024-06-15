@@ -9,7 +9,7 @@ export class MatchesService {
 
   private authToken = '5fec5264ffa0406387fcecdf70b4d691';
   private matchesUrl = 'http://api.football-data.org/v4/competitions/EC/matches';
-  private scorersUrl = 'http://api.football-data.org/v4/competitions/PL/scorers';
+  private scorersUrl = 'http://api.football-data.org/v4/competitions/EC/scorers';
 
   constructor(private httpClient: HttpClient) { }
 

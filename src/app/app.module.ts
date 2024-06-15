@@ -34,6 +34,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { RoundQualifiedComponent } from './components/predictions/round-qualified/round-qualified.component';
 import { AntepostComponent } from './components/predictions/antepost/antepost.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { TransformStatusPipe } from './pipes/transform-status.pipe';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     GroupStageMatchesComponent,
     RoundQualifiedComponent,
     AntepostComponent,
+    TransformStatusPipe,
     
   ],
   imports: [

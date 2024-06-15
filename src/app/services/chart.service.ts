@@ -34,7 +34,7 @@ export class ChartService {
         }
         //console.log(match.score.fullTime, matchPrediction.score.fullTime)
         //console.log(match.score.fullTime.home, matchPrediction.score.fullTime.home, match.score.fullTime.away, matchPrediction.score.fullTime.away)
-        if (match.score.fullTime.home === matchPrediction.score.fullTime.home && match.score.fullTime.away === matchPrediction.score.fullTime.away) {
+        if (match.score.fullTime.home === parseInt(matchPrediction.score.fullTime.home) && match.score.fullTime.away === parseInt(matchPrediction.score.fullTime.away)) {
           player.score += 5
           //console.log('+5', match.score.fullTime.homeTeam, matchPrediction.score.fullTime.homeTeam)
         }

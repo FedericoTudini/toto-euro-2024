@@ -50,7 +50,7 @@ export class GroupStageMatchesComponent {
   }
 
   public isSameScore(match: any, matchPrediction: any): boolean {
-    return match.score.fullTime.home === matchPrediction.score.fullTime.home && match.score.fullTime.away === matchPrediction.score.fullTime.away ? true : false
+    return match.score.fullTime.home === parseInt(matchPrediction.score.fullTime.home) && match.score.fullTime.away === parseInt(matchPrediction.score.fullTime.away) ? true : false
   }
 
 }

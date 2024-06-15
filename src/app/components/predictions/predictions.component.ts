@@ -25,6 +25,7 @@ export class PredictionsComponent implements OnInit {
     this.matchesService.getMatches().subscribe(
       (data: any) => {
         this.matches = data.matches.filter((m: any) => m.stage === 'GROUP_STAGE')
+        //console.log(this.matches)
         //console.log("players: ", playersData[0].predictions)
         // this.groupItemsByDate();
       }

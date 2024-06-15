@@ -15,16 +15,23 @@ export class MatchCardComponent {
   getTime(match: any): string {
      switch(match.status) {
       case 'IN_PLAY':
-        return match.minute
+        return "LIVE"
         break
       case 'PAUSED':
         return 'HT'
+        break;
+        case 'FINISHED':
+        return 'FT'
         break;
       default:
         return `${parseISO(match.utcDate).getHours()}:${parseISO(match.utcDate).getUTCMinutes()}0`
         break;
      }
     
+  }
+
+  isLive(match: any): boolean {
+    return this.getTime(match) === 'LIVE' || this.getTime(match) === 'HT';
   }
 
 }
