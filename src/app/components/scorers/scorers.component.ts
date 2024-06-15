@@ -1,6 +1,7 @@
-import { AfterViewInit, Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatchesService } from '../../services/matches.service';
+import { Observable, Subscription } from 'rxjs';
 
 interface Player {
   id: number;
@@ -44,12 +45,13 @@ interface Scorer {
   styleUrl: './scorers.component.scss',
   encapsulation: ViewEncapsulation.None
 })
-export class ScorersComponent implements AfterViewInit {
+export class ScorersComponent implements AfterViewInit, OnDestroy {
 
   public displayedColumns: string[] = [ 'name', 'team', 'goals'];
   public dataSource!: MatTableDataSource<Scorer>;
   public scorersList: any[] = [];
   public spinner: boolean = true;
+  public subscription!: Subscription
 
   constructor(private mathcesService: MatchesService) {
     
@@ -60,15 +62,20 @@ export class ScorersComponent implements AfterViewInit {
     
   }
 
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe()
+  }
+
 
   loadScorers() {
-    this.mathcesService.getScorers().subscribe(
+    this.subscription  = this.mathcesService.getScorers().subscribe(
       (data: any) => {
-        this.dataSource = new MatTableDataSource<Scorer>(data.scorers)
-        
+        //this.dataSource = new MatTableDataSource<Scorer>(data.scorers)
+        console.log(data)
         this.spinner = false
       }
     )
+    
   }
 
 }
