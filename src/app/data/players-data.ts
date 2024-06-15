@@ -6467,16 +6467,16 @@ export let playersData: Players[] = [
                 "name": "Kylian Mbapp\u00e8"
             },
             "moreGoalsGroupStage": {
-                "id": 770,
-                "name": "England"
-            },
-            "cleanSheetGroupStage": {
                 "id": 805,
                 "name": "Belgium"
             },
+            "cleanSheetGroupStage": {
+                "id": 765,
+                "name": "Portugal"
+            },
             "moreScorers": {
-                "id": 759,
-                "name": "Germany"
+                "id": 773,
+                "name": "France"
             },
             "groupWithMoreGoals": "D"
         }
