@@ -14,7 +14,7 @@
 
 .teams-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 2px;
 }
 
@@ -42,11 +42,10 @@
 
 #container {
     width: 20px;
-    height: 10px;
+    height: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 4px;
 }
 
 #container img {

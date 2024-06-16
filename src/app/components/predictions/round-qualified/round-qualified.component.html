@@ -1,8 +1,8 @@
 <div class="card-container">
   <mat-card *ngFor="let player of playerPredictions" class="example-card">
-    <mat-card-header>
-      <div>
-        <span>{{ player.name }}</span>
+    <mat-card-header class="fk-row ">
+      <div class="mat-elevation-z8" style="background-color: rgba(68,24,24,0.8); padding: 5px 15px; border-radius: 15px; border-width: 1px; border-color: white;">
+        <span style="font-weight: bold;">{{ player.name }}</span>
       </div>
     </mat-card-header>
     <mat-card-content>
@@ -13,17 +13,25 @@
       <mat-divider style="padding-top: 7px"></mat-divider>
       <div
         *ngIf="player.predictions.qualifiedRoundOfSixteen"
-        class="teams-grid"
+        style="display: flex; flex-direction: column; align-items: center;"
       >
         <div
-          *ngFor="let team of player.predictions.qualifiedRoundOfSixteen"
-          class="prediction-container"
+          *ngFor="let teams of divideInCoppie(player.predictions.qualifiedRoundOfSixteen)"
+          class="prediction-container" style="width: 100%;"
         >
-          <div class="fk-row" style="align-items: center">
-            <div id="container">
-              <img src="../../../assets/png/{{ team.id }}.png" alt="" />
+          <div class="fk-row" style="width: 100%;">
+            <div class="fk-row" style="align-items: center; justify-content: flex-end; width: 50%; padding-right: 5px;">
+              <span style="font-size: 12px;">{{ teams[0].name }}</span>
+              <div id="container" style="margin-left: 7px;">
+                <img src="../../../assets/png/{{ teams[0].id }}.png" alt="" />
+              </div>
             </div>
-            <span style="font-size: 12px;">{{ team.name }}</span>
+            <div class="fk-row" style="align-items: center; justify-content: flex-start; width: 50%; padding-left: 5px;" >
+              <div id="container" style="margin-right: 7px;">
+                <img src="../../../assets/png/{{ teams[1].id }}.png" alt="" />
+              </div>
+              <span style="font-size: 12px;">{{ teams[1].name }}</span>
+            </div>
           </div>
         </div>
       </div>
@@ -32,17 +40,28 @@
         <span>Quarti</span>
       </div>
       <mat-divider style="padding-top: 7px"></mat-divider>
-      <div *ngIf="player.predictions.qualifiedRoundOfEight" class="teams-grid">
+      <div
+        *ngIf="player.predictions.qualifiedRoundOfEight"
+        style="display: flex; flex-direction: column; align-items: center;"
+      >
         <div
-          *ngFor="let team of player.predictions.qualifiedRoundOfEight"
-          class="prediction-container"
+          *ngFor="let teams of divideInCoppie(player.predictions.qualifiedRoundOfEight)"
+          class="prediction-container" style="width: 100%;"
         >
-        <div class="fk-row" style="align-items: center">
-          <div id="container">
-            <img src="../../../assets/png/{{ team.id }}.png" alt="" />
+          <div class="fk-row" style="width: 100%;">
+            <div class="fk-row" style="align-items: center; justify-content: flex-end; width: 50%; padding-right: 5px;">
+              <span style="font-size: 12px;">{{ teams[0].name }}</span>
+              <div id="container" style="margin-left: 7px;">
+                <img src="../../../assets/png/{{ teams[0].id }}.png" alt="" />
+              </div>
+            </div>
+            <div class="fk-row" style="align-items: center; justify-content: flex-start; width: 50%; padding-left: 5px;" >
+              <div id="container" style="margin-right: 7px;">
+                <img src="../../../assets/png/{{ teams[1].id }}.png" alt="" />
+              </div>
+              <span style="font-size: 12px;">{{ teams[1].name }}</span>
+            </div>
           </div>
-          <span style="font-size: 12px;">{{ team.name }}</span>
-        </div>
         </div>
       </div>
       <!-- Semi -->
@@ -50,17 +69,28 @@
         <span>Semifinali</span>
       </div>
       <mat-divider style="padding-top: 7px"></mat-divider>
-      <div *ngIf="player.predictions.qualifiedSemifinals" class="teams-grid">
+      <div
+        *ngIf="player.predictions.qualifiedSemifinals"
+        style="display: flex; flex-direction: column; align-items: center;"
+      >
         <div
-          *ngFor="let team of player.predictions.qualifiedSemifinals"
-          class="prediction-container"
+          *ngFor="let teams of divideInCoppie(player.predictions.qualifiedSemifinals)"
+          class="prediction-container" style="width: 100%;"
         >
-        <div class="fk-row" style="align-items: center">
-          <div id="container">
-            <img src="../../../assets/png/{{ team.id }}.png" alt="" />
+          <div class="fk-row" style="width: 100%;">
+            <div class="fk-row" style="align-items: center; justify-content: flex-end; width: 50%; padding-right: 5px;">
+              <span style="font-size: 12px;">{{ teams[0].name }}</span>
+              <div id="container" style="margin-left: 7px;">
+                <img src="../../../assets/png/{{ teams[0].id }}.png" alt="" />
+              </div>
+            </div>
+            <div class="fk-row" style="align-items: center; justify-content: flex-start; width: 50%; padding-left: 5px;" >
+              <div id="container" style="margin-right: 7px;">
+                <img src="../../../assets/png/{{ teams[1].id }}.png" alt="" />
+              </div>
+              <span style="font-size: 12px;">{{ teams[1].name }}</span>
+            </div>
           </div>
-          <span style="font-size: 12px;">{{ team.name }}</span>
-        </div>
         </div>
       </div>
       <!-- Finale -->
@@ -71,7 +101,7 @@
           <div class="fk-column">
             <span>1°</span>
             <div class="fk-row" style="align-items: center">
-              <div id="container">
+              <div id="container" style="margin-right: 5px;">
                 <img src="../../../assets/png/{{player.predictions.winner.id}}.png" alt="" />
               </div>
               <span>{{ player.predictions.winner.name }}</span>
@@ -79,8 +109,8 @@
           </div>
           <div class="fk-column">
             <span>2°</span>
-            <div class="fk-row" style="align-items: center">
-              <div id="container">
+            <div class="fk-row" style="align-items: center" >
+              <div id="container" style="margin-right: 5px;">
                 <img src="../../../assets/png/{{player.predictions.second.id}}.png" alt="" />
               </div>
               <span>{{ player.predictions.second.name }}</span>

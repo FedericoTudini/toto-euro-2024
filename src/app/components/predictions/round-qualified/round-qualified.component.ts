@@ -17,6 +17,14 @@ export class RoundQualifiedComponent {
     
   }
 
+  divideInCoppie(array: any[]): any[][] {
+    let risultato = [];
+    for (let i = 0; i < array.length; i += 2) {
+      risultato.push(array.slice(i, i + 2));
+    }
+    return risultato;
+  }
+
 
 
 }
