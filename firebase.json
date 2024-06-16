@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/toto-euro-24",
+    "public": "dist/toto-euro-24/browser",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {

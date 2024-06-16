@@ -21,13 +21,14 @@ export function app(): express.Express {
   // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
   server.get('**', express.static(browserDistFolder, {
-    maxAge: '1y',
+    maxAge: '0',
     index: 'index.html',
   }));
 
   // All regular routes use the Angular engine
   server.get('**', (req, res, next) => {
     const { protocol, originalUrl, baseUrl, headers } = req;
+    res.setHeader('Cache-Control', 'no-cache, no-store, max-age=0, private, must-revalidate');
 
     commonEngine
       .render({
