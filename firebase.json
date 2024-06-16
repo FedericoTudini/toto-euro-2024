@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/toto-euro-24/browser",
+    "public": "dist/toto-euro-24",
     "headers": [
       {
         "source": "/**/!(*.*)",
