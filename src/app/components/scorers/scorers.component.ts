@@ -70,7 +70,7 @@ export class ScorersComponent implements OnInit, OnDestroy {
   loadScorers() {
     this.subscription  = this.mathcesService.getScorers().subscribe(
       (data: any) => {
-        //this.dataSource = new MatTableDataSource<Scorer>(data.scorers)
+        this.dataSource = new MatTableDataSource<Scorer>(data.scorers)
         //console.log(data)
         this.spinner = false
       }
