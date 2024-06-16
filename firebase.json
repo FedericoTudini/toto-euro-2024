@@ -1,17 +1,26 @@
 {
   "hosting": {
     "public": "dist/toto-euro-24/browser",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "headers": [
       {
-        "source": "/**",
+        "source": "/**/!(*.*)",
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "no-cache, no-store, must-revalidate"
+            "value": "no-cache"
+          }
+        ]
+      },
+      {
+        "source": "**/*.chunk.@(js|css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
           }
         ]
       }
-    ],
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    ]
   }
 }
