@@ -11,7 +11,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatchesService } from './services/matches.service';
-import { HttpHandler, HttpRequest, HttpClient, HttpInterceptor,HttpClientModule, provideHttpClient, withInterceptorsFromDi, HTTP_INTERCEPTORS  } from '@angular/common/http';
+import { HttpHandler, HttpRequest, HttpClient, HttpInterceptor,HttpClientModule, provideHttpClient, withInterceptorsFromDi, HTTP_INTERCEPTORS, withFetch  } from '@angular/common/http';
 import { MatCommonModule } from '@angular/material/core';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatDividerModule} from '@angular/material/divider';
@@ -78,7 +78,7 @@ import { CacheInterceptorService } from './services/cache-interceptor.service';
   providers: [
     provideClientHydration(),
     provideAnimationsAsync(), 
-    provideHttpClient(withInterceptorsFromDi()),
+    provideHttpClient(withInterceptorsFromDi(), withFetch()),
     { provide: HTTP_INTERCEPTORS, useClass: CacheInterceptorService, multi: true }
   ],
   bootstrap: [AppComponent]
