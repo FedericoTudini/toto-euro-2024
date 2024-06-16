@@ -45,7 +45,7 @@ interface Scorer {
   styleUrl: './scorers.component.scss',
   encapsulation: ViewEncapsulation.None
 })
-export class ScorersComponent implements AfterViewInit, OnDestroy {
+export class ScorersComponent implements OnInit, OnDestroy {
 
   public displayedColumns: string[] = [ 'name', 'team', 'goals'];
   public dataSource!: MatTableDataSource<Scorer>;
@@ -57,9 +57,9 @@ export class ScorersComponent implements AfterViewInit, OnDestroy {
     
   }
 
-  ngAfterViewInit(): void {
+  ngOnInit(): void {
     this.loadScorers()
-    
+    this.loadRandom()
   }
 
   ngOnDestroy(): void {
@@ -71,8 +71,19 @@ export class ScorersComponent implements AfterViewInit, OnDestroy {
     this.subscription  = this.mathcesService.getScorers().subscribe(
       (data: any) => {
         //this.dataSource = new MatTableDataSource<Scorer>(data.scorers)
-        console.log(data)
+        //console.log(data)
         this.spinner = false
+      }
+    )
+    
+  }
+  
+  loadRandom() {
+    this.subscription  = this.mathcesService.getRandom().subscribe(
+      (data: any) => {
+        //this.dataSource = new MatTableDataSource<Scorer>(data.scorers)
+        console.log(data)
+        //this.spinner = false
       }
     )
     

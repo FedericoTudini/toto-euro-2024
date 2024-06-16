@@ -9,21 +9,20 @@ export class MatchesService {
 
   private authToken = '5fec5264ffa0406387fcecdf70b4d691';
   private matchesUrl = 'http://api.football-data.org/v4/competitions/EC/matches';
-  private scorersUrl = 'http://api.football-data.org/v4/matches';
+  private scorersUrl = 'http://api.football-data.org/v4/competitions/EC/scorers';
+  private randomUrl = 'http://www.randomnumberapi.com/api/v1.0/random?min=100&max=1000&count=5'
 
   constructor(private httpClient: HttpClient) { }
 
   getMatches(): Observable<any> {
-    let random = (Math.floor(10000 + Math.random() * 90000)).toString();
-
-
     return this.httpClient.get(`${this.matchesUrl}`);
   }
 
   getScorers(): Observable<any> {
-    const salt = (new Date()).getTime();
-    
-
     return this.httpClient.get(`${this.scorersUrl}`);
+  }
+
+  getRandom(): Observable<any> {
+    return this.httpClient.get(this.randomUrl)
   }
 }
