@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 
@@ -23,6 +23,7 @@ export class MatchesService {
   }
 
   getRandom(): Observable<any> {
+    //let params = new HttpParams().set('id', '123')
     return this.httpClient.get(this.randomUrl)
   }
 }
