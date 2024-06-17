@@ -32,14 +32,19 @@ span {
 
 .prediction-container {
     background-color: #14274D;
-    padding: 10px 20px;
-    margin: 7px 0px;
-    border-radius: 10px;
+    padding: 3px 20px;
+    margin: 3px 0px;
+    border-radius: 7px;
     
 }
 
 .player-tag {
     font-weight: 500;
+    font-size: 14px;
+}
+
+.prediction-tag {
+    font-size: 12px;
 }
 
 .fk-row {

@@ -7,7 +7,7 @@
       <div *ngFor="let player of playerPredictions" class="prediction-container fk-row">
         <span class="player-tag">{{player.name}}</span>
         <div class="fk-row" style="align-items: center; justify-content: center">
-          <span>{{ player.predictions.winner.name}}</span>
+          <span class="prediction-tag">{{ player.predictions.winner.name}}</span>
           <div id="container" >
             <img src="../../../assets/png/{{ player.predictions.winner.id }}.png" />
           </div>
@@ -23,7 +23,7 @@
       <div *ngFor="let player of playerPredictions" class="prediction-container fk-row">
         <span class="player-tag">{{player.name}}</span>
         <div class="fk-row" style="align-items: center; justify-content: center">
-          <span>{{ player.predictions.bestScorer.name }}</span>
+          <span class="prediction-tag">{{ player.predictions.bestScorer.name }}</span>
           <div id="container" >
             <img src="../../../assets/png/{{ player.predictions.bestScorer.idTeam }}.png" />
           </div>
@@ -39,7 +39,7 @@
       <div *ngFor="let player of playerPredictions" class="prediction-container fk-row">
         <span class="player-tag">{{player.name}}</span>
         <div class="fk-row" style="align-items: center; justify-content: center">
-          <span>{{ player.predictions.moreGoalsGroupStage.name }}</span>
+          <span class="prediction-tag">{{ player.predictions.moreGoalsGroupStage.name }}</span>
           <div id="container" >
             <img src="../../../assets/png/{{ player.predictions.moreGoalsGroupStage.id }}.png" />
           </div>
@@ -55,7 +55,7 @@
       <div *ngFor="let player of playerPredictions" class="prediction-container fk-row">
         <span class="player-tag">{{player.name}}</span>
         <div class="fk-row" style="align-items: center; justify-content: center">
-          <span>{{ player.predictions.cleanSheetGroupStage.name }}</span>
+          <span class="prediction-tag">{{ player.predictions.cleanSheetGroupStage.name }}</span>
           <div id="container" >
             <img src="../../../assets/png/{{ player.predictions.cleanSheetGroupStage.id }}.png" />
           </div>
@@ -71,7 +71,7 @@
       <div *ngFor="let player of playerPredictions" class="prediction-container fk-row">
         <span class="player-tag">{{player.name}}</span>
         <div class="fk-row" style="align-items: center; justify-content: center">
-          <span>{{ player.predictions.moreScorers.name }}</span>
+          <span class="prediction-tag">{{ player.predictions.moreScorers.name }}</span>
           <div id="container" >
             <img src="../../../assets/png/{{ player.predictions.moreScorers.id }}.png" />
           </div>

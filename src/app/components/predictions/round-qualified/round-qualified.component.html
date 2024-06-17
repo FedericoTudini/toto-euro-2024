@@ -1,8 +1,8 @@
 <div class="card-container">
   <mat-card *ngFor="let player of playerPredictions" class="example-card">
     <mat-card-header class="fk-row ">
-      <div class="mat-elevation-z8" style="background-color: rgba(68,24,24,0.8); padding: 5px 15px; border-radius: 15px; border-width: 1px; border-color: white;">
-        <span style="font-weight: bold;">{{ player.name }}</span>
+      <div class="mat-elevation-z8" style="background-color: #fff; padding: 5px 15px; border-radius: 8px; border-width: 1px; border-color: white;">
+        <span style="font-weight: bold; color: rgba(68,24,24,1);">{{ player.name }}</span>
       </div>
     </mat-card-header>
     <mat-card-content>
@@ -19,20 +19,29 @@
           *ngFor="let teams of divideInCoppie(player.predictions.qualifiedRoundOfSixteen)"
           class="prediction-container" style="width: 100%;"
         >
-          <div class="fk-row" style="width: 100%;">
-            <div class="fk-row" style="align-items: center; justify-content: flex-end; width: 50%; padding-right: 5px;">
-              <span style="font-size: 12px;">{{ teams[0].name }}</span>
-              <div id="container" style="margin-left: 7px;">
-                <img src="../../../assets/png/{{ teams[0].id }}.png" alt="" />
-              </div>
+        <div class="fk-row" style="width: 100%;">
+          <div class="fk-row" style="align-items: center; justify-content: space-between; width: 50%; padding-right: 5px;">
+            <span style="font-size: 10px;">{{teams[0].group}}</span>
+            <div class="fk-row" style="align-items: center;">
+              <span style="font-size: 14px;">{{ teams[0].name }}</span>
+            <div id="container" style="margin-left: 7px;">
+              <img src="../../../assets/png/{{ teams[0].id }}.png" alt="" />
             </div>
-            <div class="fk-row" style="align-items: center; justify-content: flex-start; width: 50%; padding-left: 5px;" >
+            </div>
+            
+          </div>
+          <div class="fk-row" style="align-items: center; justify-content: space-between; width: 50%; padding-left: 5px;" >
+            
+            <div class="fk-row" style="align-items: center;">
               <div id="container" style="margin-right: 7px;">
                 <img src="../../../assets/png/{{ teams[1].id }}.png" alt="" />
               </div>
-              <span style="font-size: 12px;">{{ teams[1].name }}</span>
+              <span style="font-size: 14px;">{{ teams[1].name }}</span>
             </div>
+            <span style="font-size: 10px;">{{teams[1].group}}</span>
           </div>
+        </div>
+      
         </div>
       </div>
       <!-- Quarti -->
@@ -50,7 +59,7 @@
         >
           <div class="fk-row" style="width: 100%;">
             <div class="fk-row" style="align-items: center; justify-content: flex-end; width: 50%; padding-right: 5px;">
-              <span style="font-size: 12px;">{{ teams[0].name }}</span>
+              <span style="font-size: 14px;">{{ teams[0].name }}</span>
               <div id="container" style="margin-left: 7px;">
                 <img src="../../../assets/png/{{ teams[0].id }}.png" alt="" />
               </div>
@@ -59,7 +68,7 @@
               <div id="container" style="margin-right: 7px;">
                 <img src="../../../assets/png/{{ teams[1].id }}.png" alt="" />
               </div>
-              <span style="font-size: 12px;">{{ teams[1].name }}</span>
+              <span style="font-size: 14px;">{{ teams[1].name }}</span>
             </div>
           </div>
         </div>
@@ -79,7 +88,7 @@
         >
           <div class="fk-row" style="width: 100%;">
             <div class="fk-row" style="align-items: center; justify-content: flex-end; width: 50%; padding-right: 5px;">
-              <span style="font-size: 12px;">{{ teams[0].name }}</span>
+              <span style="font-size: 14px;">{{ teams[0].name }}</span>
               <div id="container" style="margin-left: 7px;">
                 <img src="../../../assets/png/{{ teams[0].id }}.png" alt="" />
               </div>
@@ -88,7 +97,7 @@
               <div id="container" style="margin-right: 7px;">
                 <img src="../../../assets/png/{{ teams[1].id }}.png" alt="" />
               </div>
-              <span style="font-size: 12px;">{{ teams[1].name }}</span>
+              <span style="font-size: 14px;">{{ teams[1].name }}</span>
             </div>
           </div>
         </div>
@@ -97,8 +106,24 @@
       <!-- Vincitore e Seconda -->
       <div *ngIf="player.predictions.winner && player.predictions.second">
         <mat-divider style="margin: 10px 0px"></mat-divider>
-        <div class="prediction-container">
-          <div class="fk-column">
+        <div class="fk-column">
+          <div class="mat-elevation-z8" style="background-color: #d4af37; padding: 7px 16px; border-radius: 8px;">
+            <div class="fk-row" style="align-items: center">
+              <div id="container" style="margin-right: 5px;">
+                <img src="../../../assets/png/{{player.predictions.winner.id}}.png" alt="" />
+              </div>
+              <span style="font-size: 16px;">{{ player.predictions.winner.name }}</span>
+            </div>
+          </div>
+          <div class="mat-elevation-z8" style="background-color: #A5A9B4; padding: 5px 10px; border-radius: 8px; margin-top: 5px;">
+            <div class="fk-row" style="align-items: center">
+              <div id="container" style="margin-right: 5px;">
+                <img src="../../../assets/png/{{player.predictions.second.id}}.png" alt="" />
+              </div>
+              <span style="font-size: 12px;">{{ player.predictions.second.name }}</span>
+            </div>
+          </div>
+          <!-- <div class="fk-column">
             <span>1°</span>
             <div class="fk-row" style="align-items: center">
               <div id="container" style="margin-right: 5px;">
@@ -115,7 +140,7 @@
               </div>
               <span>{{ player.predictions.second.name }}</span>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </mat-card-content>

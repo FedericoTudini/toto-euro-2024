@@ -659,67 +659,83 @@ export let playersData: Players[] = [
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 760,
-                    "name": "Spain"
+                    "name": "Spain",
+                    "group": "1B"
                 },
                 {
                     "id": 790,
-                    "name": "Ukraine"
+                    "name": "Ukraine",
+                    "group": "3ADEF"
                 },
                 {
                     "id": 759,
-                    "name": "Germany"
+                    "name": "Germany",
+                    "group": "1A"
                 },
                 {
                     "id": 782,
-                    "name": "Denmark"
+                    "name": "Denmark",
+                    "group": "2C"
                 },
                 {
                     "id": 765,
-                    "name": "Portugal"
+                    "name": "Portugal",
+                    "group": "1F"
                 },
                 {
                     "id": 780,
-                    "name": "Serbia"
+                    "name": "Serbia",
+                    "group": "3ABC"
                 },
                 {
                     "id": 8601,
-                    "name": "Netherlands"
+                    "name": "Netherlands",
+                    "group": "2D"
                 },
                 {
                     "id": 811,
-                    "name": "Romania"
+                    "name": "Romania",
+                    "group": "2E"
                 },
                 {
                     "id": 805,
-                    "name": "Belgium"
+                    "name": "Belgium",
+                    "group": "1E"
                 },
                 {
                     "id": 799,
-                    "name": "Croatia"
+                    "name": "Croatia",
+                    "group": "3ABCD"
                 },
                 {
                     "id": 773,
-                    "name": "France"
+                    "name": "France",
+                    "group": "1D"
                 },
                 {
                     "id": 803,
-                    "name": "Turkey"
+                    "name": "Turkey",
+                    "group": "2F"
                 },
                 {
                     "id": 770,
-                    "name": "England"
+                    "name": "England",
+                    "group": "1C"
                 },
                 {
                     "id": 794,
-                    "name": "Poland"
+                    "name": "Poland",
+                    "group": "3DEF"
                 },
                 {
                     "id": 788,
-                    "name": "Switzerland"
+                    "name": "Switzerland",
+                    "group": "2A"
                 },
                 {
                     "id": 784,
-                    "name": "Italy"
+                    "name": "Italy",
+                    "group": "2B"
                 }
             ],
             "qualifiedRoundOfEight": [
@@ -1469,67 +1485,83 @@ export let playersData: Players[] = [
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 760,
-                    "name": "Spain"
+                    "name": "Spain",
+                    "group": "1B"
                 },
                 {
                     "id": 803,
-                    "name": "Turkey"
+                    "name": "Turkey",
+                    "group": "3ADEF"
                 },
                 {
                     "id": 759,
-                    "name": "Germany"
+                    "name": "Germany",
+                    "group": "1A"
                 },
                 {
                     "id": 780,
-                    "name": "Serbia"
+                    "name": "Serbia",
+                    "group": "2C"
                 },
                 {
                     "id": 765,
-                    "name": "Portugal"
+                    "name": "Portugal",
+                    "group": "1F"
                 },
                 {
                     "id": 799,
-                    "name": "Croatia"
+                    "name": "Croatia",
+                    "group": "3ABC"
                 },
                 {
                     "id": 8601,
-                    "name": "Netherlands"
-                },
-                {
-                    "id": 1978,
-                    "name": "Georgia"
+                    "name": "Netherlands",
+                    "group": "2D"
                 },
                 {
                     "id": 805,
-                    "name": "Belgium"
-                },
-                {
-                    "id": 773,
-                    "name": "France"
-                },
-                {
-                    "id": 782,
-                    "name": "Denmark"
+                    "name": "Belgium",
+                    "group": "2E"
                 },
                 {
                     "id": 768,
-                    "name": "Slovakia"
+                    "name": "Slovakia",
+                    "group": "1E"
+                },
+                {
+                    "id": 782,
+                    "name": "Denmark",
+                    "group": "3ABCD"
+                },
+                {
+                    "id": 773,
+                    "name": "France",
+                    "group": "1D"
+                },
+                {
+                    "id": 1978,
+                    "name": "Georgia",
+                    "group": "2F"
                 },
                 {
                     "id": 770,
-                    "name": "England"
+                    "name": "England",
+                    "group": "1C"
                 },
                 {
                     "id": 790,
-                    "name": "Ukraine"
+                    "name": "Ukraine",
+                    "group": "3DEF"
                 },
                 {
                     "id": 827,
-                    "name": "Hungary"
+                    "name": "Hungary",
+                    "group": "2A"
                 },
                 {
                     "id": 784,
-                    "name": "Italy"
+                    "name": "Italy",
+                    "group": "2B"
                 }
             ],
             "qualifiedRoundOfEight": [
@@ -2279,67 +2311,83 @@ export let playersData: Players[] = [
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 760,
-                    "name": "Spain"
+                    "name": "Spain",
+                    "group": "1B"
                 },
                 {
                     "id": 788,
-                    "name": "Switzerland"
+                    "name": "Switzerland",
+                    "group": "3ADEF"
                 },
                 {
                     "id": 759,
-                    "name": "Germany"
+                    "name": "Germany",
+                    "group": "1A"
                 },
                 {
                     "id": 777,
-                    "name": "Slovenia"
+                    "name": "Slovenia",
+                    "group": "2C"
                 },
                 {
                     "id": 765,
-                    "name": "Portugal"
+                    "name": "Portugal",
+                    "group": "1F"
                 },
                 {
                     "id": 780,
-                    "name": "Serbia"
+                    "name": "Serbia",
+                    "group": "3ABC"
                 },
                 {
                     "id": 816,
-                    "name": "Austria"
+                    "name": "Austria",
+                    "group": "2D"
                 },
                 {
                     "id": 790,
-                    "name": "Ukraine"
+                    "name": "Ukraine",
+                    "group": "2E"
                 },
                 {
                     "id": 805,
-                    "name": "Belgium"
+                    "name": "Belgium",
+                    "group": "1E"
                 },
                 {
                     "id": 799,
-                    "name": "Croatia"
+                    "name": "Croatia",
+                    "group": "3ABCD"
                 },
                 {
                     "id": 773,
-                    "name": "France"
+                    "name": "France",
+                    "group": "1D"
                 },
                 {
                     "id": 803,
-                    "name": "Turkey"
+                    "name": "Turkey",
+                    "group": "2F"
                 },
                 {
                     "id": 770,
-                    "name": "England"
+                    "name": "England",
+                    "group": "1C"
                 },
                 {
                     "id": 8601,
-                    "name": "Netherlands"
+                    "name": "Netherlands",
+                    "group": "3DEF"
                 },
                 {
                     "id": 827,
-                    "name": "Hungary"
+                    "name": "Hungary",
+                    "group": "2A"
                 },
                 {
                     "id": 784,
-                    "name": "Italy"
+                    "name": "Italy",
+                    "group": "2B"
                 }
             ],
             "qualifiedRoundOfEight": [
@@ -3089,67 +3137,83 @@ export let playersData: Players[] = [
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 784,
-                    "name": "Italy"
+                    "name": "Italy",
+                    "group": "1B"
                 },
                 {
                     "id": 8873,
-                    "name": "Scotland"
-                },
-                {
-                    "id": 782,
-                    "name": "Denmark"
-                },
-                {
-                    "id": 765,
-                    "name": "Portugal"
-                },
-                {
-                    "id": 780,
-                    "name": "Serbia"
-                },
-                {
-                    "id": 8601,
-                    "name": "Netherlands"
-                },
-                {
-                    "id": 790,
-                    "name": "Ukraine"
+                    "name": "Scotland",
+                    "group": "3ADEF"
                 },
                 {
                     "id": 759,
-                    "name": "Germany"
+                    "name": "Germany",
+                    "group": "1A"
+                },
+                {
+                    "id": 782,
+                    "name": "Denmark",
+                    "group": "2C"
+                },
+                {
+                    "id": 765,
+                    "name": "Portugal",
+                    "group": "1F"
+                },
+                {
+                    "id": 780,
+                    "name": "Serbia",
+                    "group": "3ABC"
+                },
+                {
+                    "id": 8601,
+                    "name": "Netherlands",
+                    "group": "2D"
+                },
+                {
+                    "id": 790,
+                    "name": "Ukraine",
+                    "group": "2E"
                 },
                 {
                     "id": 805,
-                    "name": "Belgium"
+                    "name": "Belgium",
+                    "group": "1E"
                 },
                 {
                     "id": 760,
-                    "name": "Spain"
+                    "name": "Spain",
+                    "group": "3ABCD"
                 },
                 {
                     "id": 773,
-                    "name": "France"
+                    "name": "France",
+                    "group": "1D"
                 },
                 {
                     "id": 803,
-                    "name": "Turkey"
+                    "name": "Turkey",
+                    "group": "2F"
                 },
                 {
                     "id": 770,
-                    "name": "England"
+                    "name": "England",
+                    "group": "1C"
                 },
                 {
                     "id": 794,
-                    "name": "Poland"
+                    "name": "Poland",
+                    "group": "3DEF"
                 },
                 {
                     "id": 788,
-                    "name": "Switzerland"
+                    "name": "Switzerland",
+                    "group": "2A"
                 },
                 {
                     "id": 799,
-                    "name": "Croatia"
+                    "name": "Croatia",
+                    "group": "2B"
                 }
             ],
             "qualifiedRoundOfEight": [
@@ -3899,67 +3963,83 @@ export let playersData: Players[] = [
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 760,
-                    "name": "Spain"
+                    "name": "Spain",
+                    "group": "1B"
                 },
                 {
                     "id": 8873,
-                    "name": "Scotland"
+                    "name": "Scotland",
+                    "group": "3ADEF"
                 },
                 {
                     "id": 759,
-                    "name": "Germany"
+                    "name": "Germany",
+                    "group": "1A"
                 },
                 {
                     "id": 782,
-                    "name": "Denmark"
+                    "name": "Denmark",
+                    "group": "2C"
                 },
                 {
                     "id": 765,
-                    "name": "Portugal"
+                    "name": "Portugal",
+                    "group": "1F"
                 },
                 {
                     "id": 780,
-                    "name": "Serbia"
+                    "name": "Serbia",
+                    "group": "3ABC"
                 },
                 {
                     "id": 794,
-                    "name": "Poland"
+                    "name": "Poland",
+                    "group": "2D"
                 },
                 {
                     "id": 790,
-                    "name": "Ukraine"
+                    "name": "Ukraine",
+                    "group": "2E"
                 },
                 {
                     "id": 805,
-                    "name": "Belgium"
+                    "name": "Belgium",
+                    "group": "1E"
                 },
                 {
                     "id": 799,
-                    "name": "Croatia"
+                    "name": "Croatia",
+                    "group": "3ABCD"
                 },
                 {
                     "id": 773,
-                    "name": "France"
+                    "name": "France",
+                    "group": "1D"
                 },
                 {
                     "id": 803,
-                    "name": "Turkey"
+                    "name": "Turkey",
+                    "group": "2F"
                 },
                 {
                     "id": 770,
-                    "name": "England"
+                    "name": "England",
+                    "group": "1C"
                 },
                 {
                     "id": 768,
-                    "name": "Slovakia"
+                    "name": "Slovakia",
+                    "group": "3DEF"
                 },
                 {
                     "id": 788,
-                    "name": "Switzerland"
+                    "name": "Switzerland",
+                    "group": "2A"
                 },
                 {
                     "id": 784,
-                    "name": "Italy"
+                    "name": "Italy",
+                    "group": "2B"
                 }
             ],
             "qualifiedRoundOfEight": [
@@ -4709,67 +4789,83 @@ export let playersData: Players[] = [
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 760,
-                    "name": "Spain"
+                    "name": "Spain",
+                    "group": "1B"
                 },
                 {
                     "id": 8873,
-                    "name": "Scotland"
+                    "name": "Scotland",
+                    "group": "3ADEF"
                 },
                 {
                     "id": 759,
-                    "name": "Germany"
+                    "name": "Germany",
+                    "group": "1A"
                 },
                 {
                     "id": 782,
-                    "name": "Denmark"
+                    "name": "Denmark",
+                    "group": "2C"
                 },
                 {
                     "id": 765,
-                    "name": "Portugal"
+                    "name": "Portugal",
+                    "group": "1F"
                 },
                 {
                     "id": 780,
-                    "name": "Serbia"
+                    "name": "Serbia",
+                    "group": "3ABC"
                 },
                 {
                     "id": 8601,
-                    "name": "Netherlands"
+                    "name": "Netherlands",
+                    "group": "2D"
                 },
                 {
                     "id": 790,
-                    "name": "Ukraine"
+                    "name": "Ukraine",
+                    "group": "2E"
                 },
                 {
                     "id": 805,
-                    "name": "Belgium"
+                    "name": "Belgium",
+                    "group": "1E"
                 },
                 {
                     "id": 799,
-                    "name": "Croatia"
+                    "name": "Croatia",
+                    "group": "3ABCD"
                 },
                 {
                     "id": 773,
-                    "name": "France"
+                    "name": "France",
+                    "group": "1D"
                 },
                 {
                     "id": 803,
-                    "name": "Turkey"
+                    "name": "Turkey",
+                    "group": "2F"
                 },
                 {
                     "id": 770,
-                    "name": "England"
+                    "name": "England",
+                    "group": "1C"
                 },
                 {
                     "id": 798,
-                    "name": "Czechia"
+                    "name": "Czechia",
+                    "group": "3DEF"
                 },
                 {
                     "id": 788,
-                    "name": "Switzerland"
+                    "name": "Switzerland",
+                    "group": "2A"
                 },
                 {
                     "id": 784,
-                    "name": "Italy"
+                    "name": "Italy",
+                    "group": "2B"
                 }
             ],
             "qualifiedRoundOfEight": [
@@ -5519,67 +5615,83 @@ export let playersData: Players[] = [
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 760,
-                    "name": "Spain"
+                    "name": "Spain",
+                    "group": "1B"
                 },
                 {
                     "id": 827,
-                    "name": "Hungary"
+                    "name": "Hungary",
+                    "group": "3ADEF"
                 },
                 {
                     "id": 759,
-                    "name": "Germany"
+                    "name": "Germany",
+                    "group": "1A"
                 },
                 {
                     "id": 780,
-                    "name": "Serbia"
+                    "name": "Serbia",
+                    "group": "2C"
                 },
                 {
                     "id": 765,
-                    "name": "Portugal"
+                    "name": "Portugal",
+                    "group": "1F"
                 },
                 {
                     "id": 782,
-                    "name": "Denmark"
+                    "name": "Denmark",
+                    "group": "3ABC"
                 },
                 {
                     "id": 8601,
-                    "name": "Netherlands"
+                    "name": "Netherlands",
+                    "group": "2D"
                 },
                 {
                     "id": 790,
-                    "name": "Ukraine"
+                    "name": "Ukraine",
+                    "group": "2E"
                 },
                 {
                     "id": 805,
-                    "name": "Belgium"
+                    "name": "Belgium",
+                    "group": "1E"
                 },
                 {
                     "id": 799,
-                    "name": "Croatia"
+                    "name": "Croatia",
+                    "group": "3ABCD"
                 },
                 {
                     "id": 773,
-                    "name": "France"
+                    "name": "France",
+                    "group": "1D"
                 },
                 {
                     "id": 803,
-                    "name": "Turkey"
+                    "name": "Turkey",
+                    "group": "2F"
                 },
                 {
                     "id": 770,
-                    "name": "England"
+                    "name": "England",
+                    "group": "1C"
                 },
                 {
                     "id": 816,
-                    "name": "Austria"
+                    "name": "Austria",
+                    "group": "3DEF"
                 },
                 {
                     "id": 788,
-                    "name": "Switzerland"
+                    "name": "Switzerland",
+                    "group": "2A"
                 },
                 {
                     "id": 784,
-                    "name": "Italy"
+                    "name": "Italy",
+                    "group": "2B"
                 }
             ],
             "qualifiedRoundOfEight": [
@@ -6329,67 +6441,83 @@ export let playersData: Players[] = [
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 784,
-                    "name": "Italy"
+                    "name": "Italy",
+                    "group": "1B"
                 },
                 {
                     "id": 768,
-                    "name": "Slovakia"
+                    "name": "Slovakia",
+                    "group": "3ADEF"
                 },
                 {
                     "id": 759,
-                    "name": "Germany"
+                    "name": "Germany",
+                    "group": "1A"
                 },
                 {
                     "id": 780,
-                    "name": "Serbia"
+                    "name": "Serbia",
+                    "group": "2C"
                 },
                 {
                     "id": 765,
-                    "name": "Portugal"
+                    "name": "Portugal",
+                    "group": "1F"
                 },
                 {
                     "id": 782,
-                    "name": "Denmark"
+                    "name": "Denmark",
+                    "group": "3ABC"
                 },
                 {
                     "id": 8601,
-                    "name": "Netherlands"
+                    "name": "Netherlands",
+                    "group": "2D"
                 },
                 {
                     "id": 790,
-                    "name": "Ukraine"
+                    "name": "Ukraine",
+                    "group": "2E"
                 },
                 {
                     "id": 805,
-                    "name": "Belgium"
+                    "name": "Belgium",
+                    "group": "1E"
                 },
                 {
                     "id": 799,
-                    "name": "Croatia"
+                    "name": "Croatia",
+                    "group": "3ABCD"
                 },
                 {
                     "id": 773,
-                    "name": "France"
+                    "name": "France",
+                    "group": "1D"
                 },
                 {
                     "id": 803,
-                    "name": "Turkey"
+                    "name": "Turkey",
+                    "group": "2F"
                 },
                 {
                     "id": 770,
-                    "name": "England"
+                    "name": "England",
+                    "group": "1C"
                 },
                 {
                     "id": 816,
-                    "name": "Austria"
+                    "name": "Austria",
+                    "group": "3DEF"
                 },
                 {
                     "id": 788,
-                    "name": "Switzerland"
+                    "name": "Switzerland",
+                    "group": "2A"
                 },
                 {
                     "id": 760,
-                    "name": "Spain"
+                    "name": "Spain",
+                    "group": "2B"
                 }
             ],
             "qualifiedRoundOfEight": [
@@ -7139,67 +7267,83 @@ export let playersData: Players[] = [
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 784,
-                    "name": "Italy"
+                    "name": "Italy",
+                    "group": "1B"
                 },
                 {
                     "id": 794,
-                    "name": "Poland"
+                    "name": "Poland",
+                    "group": "3ADEF"
                 },
                 {
                     "id": 759,
-                    "name": "Germany"
+                    "name": "Germany",
+                    "group": "1A"
                 },
                 {
                     "id": 782,
-                    "name": "Denmark"
+                    "name": "Denmark",
+                    "group": "2C"
                 },
                 {
                     "id": 765,
-                    "name": "Portugal"
+                    "name": "Portugal",
+                    "group": "1F"
                 },
                 {
                     "id": 799,
-                    "name": "Croatia"
+                    "name": "Croatia",
+                    "group": "3ABC"
                 },
                 {
                     "id": 773,
-                    "name": "France"
+                    "name": "France",
+                    "group": "2D"
                 },
                 {
                     "id": 790,
-                    "name": "Ukraine"
+                    "name": "Ukraine",
+                    "group": "2E"
                 },
                 {
                     "id": 805,
-                    "name": "Belgium"
+                    "name": "Belgium",
+                    "group": "1E"
                 },
                 {
                     "id": 827,
-                    "name": "Hungary"
+                    "name": "Hungary",
+                    "group": "3ABCD"
                 },
                 {
                     "id": 8601,
-                    "name": "Netherlands"
+                    "name": "Netherlands",
+                    "group": "1D"
                 },
                 {
                     "id": 803,
-                    "name": "Turkey"
+                    "name": "Turkey",
+                    "group": "2F"
                 },
                 {
                     "id": 770,
-                    "name": "England"
+                    "name": "England",
+                    "group": "1C"
                 },
                 {
                     "id": 1978,
-                    "name": "Georgia"
+                    "name": "Georgia",
+                    "group": "3DEF"
                 },
                 {
                     "id": 788,
-                    "name": "Switzerland"
+                    "name": "Switzerland",
+                    "group": "2A"
                 },
                 {
                     "id": 760,
-                    "name": "Spain"
+                    "name": "Spain",
+                    "group": "2B"
                 }
             ],
             "qualifiedRoundOfEight": [
@@ -7949,67 +8093,83 @@ export let playersData: Players[] = [
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 760,
-                    "name": "Spain"
+                    "name": "Spain",
+                    "group": "1B"
                 },
                 {
                     "id": 1978,
-                    "name": "Georgia"
+                    "name": "Georgia",
+                    "group": "3ADEF"
                 },
                 {
                     "id": 759,
-                    "name": "Germany"
+                    "name": "Germany",
+                    "group": "1A"
                 },
                 {
                     "id": 782,
-                    "name": "Denmark"
+                    "name": "Denmark",
+                    "group": "2C"
                 },
                 {
                     "id": 765,
-                    "name": "Portugal"
+                    "name": "Portugal",
+                    "group": "1F"
                 },
                 {
                     "id": 788,
-                    "name": "Switzerland"
+                    "name": "Switzerland",
+                    "group": "3ABC"
                 },
                 {
                     "id": 8601,
-                    "name": "Netherlands"
+                    "name": "Netherlands",
+                    "group": "2D"
                 },
                 {
                     "id": 768,
-                    "name": "Slovakia"
+                    "name": "Slovakia",
+                    "group": "2E"
                 },
                 {
                     "id": 805,
-                    "name": "Belgium"
+                    "name": "Belgium",
+                    "group": "1E"
                 },
                 {
                     "id": 780,
-                    "name": "Serbia"
+                    "name": "Serbia",
+                    "group": "3ABCD"
                 },
                 {
                     "id": 773,
-                    "name": "France"
+                    "name": "France",
+                    "group": "1D"
                 },
                 {
                     "id": 803,
-                    "name": "Turkey"
+                    "name": "Turkey",
+                    "group": "2F"
                 },
                 {
                     "id": 770,
-                    "name": "England"
+                    "name": "England",
+                    "group": "1C"
                 },
                 {
                     "id": 794,
-                    "name": "Poland"
+                    "name": "Poland",
+                    "group": "3DEF"
                 },
                 {
                     "id": 8873,
-                    "name": "Scotland"
+                    "name": "Scotland",
+                    "group": "2A"
                 },
                 {
                     "id": 784,
-                    "name": "Italy"
+                    "name": "Italy",
+                    "group": "2B"
                 }
             ],
             "qualifiedRoundOfEight": [
@@ -8759,67 +8919,83 @@ export let playersData: Players[] = [
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 760,
-                    "name": "Spain"
+                    "name": "Spain",
+                    "group": "1B"
                 },
                 {
                     "id": 788,
-                    "name": "Switzerland"
+                    "name": "Switzerland",
+                    "group": "3ADEF"
                 },
                 {
                     "id": 759,
-                    "name": "Germany"
+                    "name": "Germany",
+                    "group": "1A"
                 },
                 {
                     "id": 780,
-                    "name": "Serbia"
+                    "name": "Serbia",
+                    "group": "2C"
                 },
                 {
                     "id": 765,
-                    "name": "Portugal"
+                    "name": "Portugal",
+                    "group": "1F"
                 },
                 {
                     "id": 782,
-                    "name": "Denmark"
+                    "name": "Denmark",
+                    "group": "3ABC"
                 },
                 {
                     "id": 8601,
-                    "name": "Netherlands"
+                    "name": "Netherlands",
+                    "group": "2D"
                 },
                 {
                     "id": 768,
-                    "name": "Slovakia"
+                    "name": "Slovakia",
+                    "group": "2E"
                 },
                 {
                     "id": 805,
-                    "name": "Belgium"
+                    "name": "Belgium",
+                    "group": "1E"
                 },
                 {
                     "id": 799,
-                    "name": "Croatia"
+                    "name": "Croatia",
+                    "group": "3ABCD"
                 },
                 {
                     "id": 773,
-                    "name": "France"
+                    "name": "France",
+                    "group": "1D"
                 },
                 {
                     "id": 803,
-                    "name": "Turkey"
+                    "name": "Turkey",
+                    "group": "2F"
                 },
                 {
                     "id": 770,
-                    "name": "England"
+                    "name": "England",
+                    "group": "1C"
                 },
                 {
                     "id": 798,
-                    "name": "Czechia"
+                    "name": "Czechia",
+                    "group": "3DEF"
                 },
                 {
                     "id": 8873,
-                    "name": "Scotland"
+                    "name": "Scotland",
+                    "group": "2A"
                 },
                 {
                     "id": 784,
-                    "name": "Italy"
+                    "name": "Italy",
+                    "group": "2B"
                 }
             ],
             "qualifiedRoundOfEight": [
@@ -8911,6 +9087,4 @@ export let playersData: Players[] = [
             "groupWithMoreGoals": "B"
         }
     }
-
-
 ]
