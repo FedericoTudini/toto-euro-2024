@@ -78,8 +78,7 @@ import { CacheInterceptorService } from './services/cache-interceptor.service';
   providers: [
     provideClientHydration(),
     provideAnimationsAsync(), 
-    provideHttpClient(withInterceptorsFromDi(), withFetch()),
-    { provide: HTTP_INTERCEPTORS, useClass: CacheInterceptorService, multi: true }
+    provideHttpClient(withInterceptorsFromDi(), withFetch())
   ],
   bootstrap: [AppComponent]
 })
