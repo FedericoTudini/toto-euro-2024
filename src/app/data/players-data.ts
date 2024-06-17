@@ -8908,7 +8908,7 @@ export let playersData: Players[] = [
                 "id": 760,
                 "name": "Spain"
             },
-            "groupWithMoreGoals": "A"
+            "groupWithMoreGoals": "B"
         }
     }
 
