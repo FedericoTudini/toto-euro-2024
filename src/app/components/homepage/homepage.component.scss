@@ -22,4 +22,10 @@ mat-row {
     background-color: #f9f9f9; /* Replace with your desired color */
   }
 
+  :host ::ng-deep {
+    .mat-mdc-table {
+        width: 50%;
+    }
+}
+
   

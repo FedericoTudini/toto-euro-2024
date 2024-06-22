@@ -16,7 +16,7 @@ import { MatSort } from '@angular/material/sort';
 export class HomepageComponent implements OnInit {
 
   public playersData: Players[] = playersData
-  public displayedColumns: string[] = ['position', 'name', 'score'];
+  public displayedColumns: string[] = ['position', 'name', 'score', '1X2'];
   public dataSource!: MatTableDataSource<Players>;
   public matches!: any[];
   public spinner: boolean = true;
