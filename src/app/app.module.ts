@@ -36,6 +36,7 @@ import { AntepostComponent } from './components/predictions/antepost/antepost.co
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { TransformStatusPipe } from './pipes/transform-status.pipe';
 import { CacheInterceptorService } from './services/cache-interceptor.service';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { CacheInterceptorService } from './services/cache-interceptor.service';
     MatExpansionModule,
     MatChipsModule,
     MatTabsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatSortModule
   ],
   providers: [
     provideClientHydration(),

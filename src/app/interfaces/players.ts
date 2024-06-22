@@ -4,6 +4,8 @@ export interface Players {
     id: number
     name: string
     score: number
-    predictions: Predictions
+    predictions: Predictions,
+    esiti: number,
+    risultati: number
 }
 

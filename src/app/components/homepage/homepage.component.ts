@@ -1,10 +1,11 @@
 import { ChartService } from './../../services/chart.service';
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Players } from '../../interfaces/players';
 import { playersData } from '../../data/players-data';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatchesService } from '../../services/matches.service';
 import { error } from 'console';
+import { MatSort } from '@angular/material/sort';
 
 @Component({
   selector: 'app-homepage',
@@ -19,6 +20,7 @@ export class HomepageComponent implements OnInit {
   public dataSource!: MatTableDataSource<Players>;
   public matches!: any[];
   public spinner: boolean = true;
+  @ViewChild(MatSort) sort!: MatSort;
 
   constructor(private matchesService: MatchesService, private chartService: ChartService) {
 
@@ -34,6 +36,7 @@ export class HomepageComponent implements OnInit {
         this.matches = data.matches.filter((m: any) => m.stage === 'GROUP_STAGE')
         this.chartService.calculateTable(this.matches, playersData)
         this.dataSource = new MatTableDataSource<Players>(this.playersData.sort((a: Players, b: Players) => b.score - a.score))
+        this.dataSource.sort = this.sort;
         this.spinner = false
       }
     )

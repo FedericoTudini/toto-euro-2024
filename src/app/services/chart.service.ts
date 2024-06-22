@@ -31,9 +31,11 @@ export class ChartService {
       if (match !== undefined) {
         if (match.score.winner === matchPrediction.score.winner) {
           player.score += 2
+          player.esiti += 1
         }
         if (match.score.fullTime.home === parseInt(matchPrediction.score.fullTime.home) && match.score.fullTime.away === parseInt(matchPrediction.score.fullTime.away)) {
           player.score += 5
+          player.risultati += 1
         }
       }
     })

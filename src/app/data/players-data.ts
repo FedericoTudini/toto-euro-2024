@@ -5,6 +5,8 @@ export let playersData: Players[] = [
         "id": 1,
         "name": "Fede",
         "score": 0,
+        "esiti": 0,
+        "risultati": 0,
         "predictions": {
             "groupStage": [
                 {
@@ -831,6 +833,8 @@ export let playersData: Players[] = [
         "id": 2,
         "name": "Giovanni",
         "score": 0,
+        "esiti": 0,
+        "risultati": 0,
         "predictions": {
             "groupStage": [
                 {
@@ -1657,6 +1661,8 @@ export let playersData: Players[] = [
         "id": 3,
         "name": "Cataldo",
         "score": 0,
+        "esiti": 0,
+        "risultati": 0,
         "predictions": {
             "groupStage": [
                 {
@@ -2483,6 +2489,8 @@ export let playersData: Players[] = [
         "id": 4,
         "name": "Gabo",
         "score": 0,
+        "esiti": 0,
+        "risultati": 0,
         "predictions": {
             "groupStage": [
                 {
@@ -3309,6 +3317,8 @@ export let playersData: Players[] = [
         "id": 5,
         "name": "Marino",
         "score": 0,
+        "esiti": 0,
+        "risultati": 0,
         "predictions": {
             "groupStage": [
                 {
@@ -4135,6 +4145,8 @@ export let playersData: Players[] = [
         "id": 6,
         "name": "Guido",
         "score": 0,
+        "esiti": 0,
+        "risultati": 0,
         "predictions": {
             "groupStage": [
                 {
@@ -4961,6 +4973,8 @@ export let playersData: Players[] = [
         "id": 7,
         "name": "Fra",
         "score": 0,
+        "esiti": 0,
+        "risultati": 0,
         "predictions": {
             "groupStage": [
                 {
@@ -5787,6 +5801,8 @@ export let playersData: Players[] = [
         "id": 8,
         "name": "Lollo",
         "score": 0,
+        "esiti": 0,
+        "risultati": 0,
         "predictions": {
             "groupStage": [
                 {
@@ -6613,6 +6629,8 @@ export let playersData: Players[] = [
         "id": 9,
         "name": "Andrea",
         "score": 0,
+        "esiti": 0,
+        "risultati": 0,
         "predictions": {
             "groupStage": [
                 {
@@ -7439,6 +7457,8 @@ export let playersData: Players[] = [
         "id": 10,
         "name": "Marco",
         "score": 0,
+        "esiti": 0,
+        "risultati": 0,
         "predictions": {
             "groupStage": [
                 {
@@ -8265,6 +8285,8 @@ export let playersData: Players[] = [
         "id": 11,
         "name": "Nike",
         "score": 0,
+        "esiti": 0,
+        "risultati": 0,
         "predictions": {
             "groupStage": [
                 {
@@ -9091,6 +9113,8 @@ export let playersData: Players[] = [
         "id": 12,
         "name": "Lele",
         "score": 0,
+        "esiti": 0,
+        "risultati": 0,
         "predictions": {
             "groupStage": [
                 {
