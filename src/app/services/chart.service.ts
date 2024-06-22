@@ -1,3 +1,4 @@
+import { playersData } from '../data/players-data';
 import { Players } from '../interfaces/players';
 import { Injectable } from '@angular/core';
 
@@ -6,40 +7,61 @@ import { Injectable } from '@angular/core';
 })
 export class ChartService {
 
-  /* Inserire come campi i risultati degli Antepost e dei Passaggi Turno */
+  public qualifiedRoundOfSixteen: any[] = [
+    
+  ]
 
   constructor() { }
 
   public calculateTable(matches: any[], playersData: Players[]) {
-    this.calculateGroupStage(matches, playersData)
+    playersData.forEach((player) => {
+      this.calculateGroupStage(matches, player)
+      this.calculateRoundOfSixteen(player)
+    })
   }
 
-  private calculateGroupStage(matches: any[], playersData: Players[]) {
+  private calculateGroupStage(matches: any[], player: Players) {
     matches = matches.filter((m: any) => m.stage === 'GROUP_STAGE' && ["IN_PLAY", "PAUSED", "FINISHED"].includes(m.status))
-    playersData.forEach((player) => {
-      this.checkMatchesOutcome(matches, player)
-    })
+    this.checkMatchesOutcome(matches, player)
   }
 
   private checkMatchesOutcome(matches: any[], player: Players) {
-    //console.log(matches, player)
     player.predictions?.groupStage?.forEach((matchPrediction) => {
       let match = matches.find((m) => m.id === matchPrediction.id)
-      //console.log(match.score.winner,  matchPrediction.score.winner)
-      //console.log(match, matchPrediction.id)
       if (match !== undefined) {
         if (match.score.winner === matchPrediction.score.winner) {
           player.score += 2
-          //console.log('+2', match.score.winner, matchPrediction.score.winner)
         }
-        //console.log(match.score.fullTime, matchPrediction.score.fullTime)
-        //console.log(match.score.fullTime.home, matchPrediction.score.fullTime.home, match.score.fullTime.away, matchPrediction.score.fullTime.away)
         if (match.score.fullTime.home === parseInt(matchPrediction.score.fullTime.home) && match.score.fullTime.away === parseInt(matchPrediction.score.fullTime.away)) {
           player.score += 5
-          //console.log('+5', match.score.fullTime.homeTeam, matchPrediction.score.fullTime.homeTeam)
         }
       }
     })
+  }
+
+  private calculateRoundOfSixteen(player: Players) {
+    for (let team of player.predictions?.qualifiedRoundOfSixteen) {
+      let qualified = this.qualifiedRoundOfSixteen.find((t) => t.id === team.id)
+      if (qualified) {
+        player.score += 10
+        if (this.isPositionGroupCorrect(qualified.group, team.group)) {
+          player.score += 5
+        }
+      }
+    }
+  }
+
+  private isPositionGroupCorrect(groupSrc: string, groupDest: string): boolean {
+    return groupSrc === groupDest || (groupSrc.startsWith("3") && groupDest.startsWith("3"))
+  }
+
+  public getQualifiedRoundOfSixteen(): any[] {
+    return this.qualifiedRoundOfSixteen
+  }
+
+  public isTeamQualified(team: any): boolean {
+    let qualified = this.qualifiedRoundOfSixteen.find((t) => t.id === team.id)
+    return !!qualified
   }
 
 

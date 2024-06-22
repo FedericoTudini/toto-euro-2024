@@ -1,3 +1,4 @@
+import { ChartService } from './../../../services/chart.service';
 import { Component, Input } from '@angular/core';
 import { playersData } from '../../../data/players-data';
 import { MatchesService } from '../../../services/matches.service';
@@ -13,7 +14,7 @@ export class RoundQualifiedComponent {
   public matches!: any[];
   public playerPredictions: any[] = playersData;
 
-  constructor(private matchesService: MatchesService) {
+  constructor(private chartService: ChartService) {
     
   }
 
@@ -23,6 +24,10 @@ export class RoundQualifiedComponent {
       risultato.push(array.slice(i, i + 2));
     }
     return risultato;
+  }
+
+  isQualified(team: any) {
+    return this.chartService.isTeamQualified(team)
   }
 
 
