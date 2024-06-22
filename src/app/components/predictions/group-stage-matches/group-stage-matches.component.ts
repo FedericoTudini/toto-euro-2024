@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { playersData } from '../../../data/players-data';
 import { MatchesService } from '../../../services/matches.service';
+import { isSameDay, parseISO } from 'date-fns';
 
 @Component({
   selector: 'group-stage-matches',
@@ -12,10 +13,11 @@ export class GroupStageMatchesComponent {
   @Input()
   public matches!: any[];
   public playerPredictions: any[] = playersData;
+  @Input()
+  public todaysMatches!: any[];
 
   constructor(private matchesService: MatchesService) {
-
-  }
+   }
 
   getPlayerPrediction(id: number, matchesPredictions: any[]) {
     if (!matchesPredictions) return 'error'
