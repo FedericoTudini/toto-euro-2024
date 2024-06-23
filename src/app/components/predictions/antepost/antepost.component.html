@@ -86,8 +86,8 @@
     <mat-card-content style="border-radius: 20px; background-color: #222232; align-items: center; justify-content: center; padding-top: 16px;">
       <div *ngFor="let player of playerPredictions" class="prediction-container fk-row">
         <span class="player-tag">{{player.name}}</span>
-        <div class="fk-row" style="align-items: center; justify-content: center; background-color: white; border-radius: 100px; padding: 0px 8px;">
-          <span style="color: #222232; font-weight: bold;">{{ player.predictions.groupWithMoreGoals }}</span>
+        <div class="fk-row" style="align-items: center; justify-content: center;">
+          <span style="color: white; font-weight: bold;">{{ player.predictions.groupWithMoreGoals }}</span>
         </div>
       </div>
     </mat-card-content>

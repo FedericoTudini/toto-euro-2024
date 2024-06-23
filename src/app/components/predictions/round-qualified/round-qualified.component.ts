@@ -30,6 +30,12 @@ export class RoundQualifiedComponent {
     return this.chartService.isTeamQualified(team)
   }
 
+  isSameSpot(team: any) {
+    return this.chartService.isSameSpot(team)
+  }
+
+  
+
 
 
 }

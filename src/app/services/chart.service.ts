@@ -8,7 +8,16 @@ import { Injectable } from '@angular/core';
 export class ChartService {
 
   public qualifiedRoundOfSixteen: any[] = [
-    
+    {
+      "id": 788,
+      "name": "Switzerland",
+      "group": "2A"
+    },
+    {
+      "id": 759,
+      "name": "Germany",
+      "group": "1A"
+    },
   ]
 
   constructor() { }
@@ -64,6 +73,14 @@ export class ChartService {
   public isTeamQualified(team: any): boolean {
     let qualified = this.qualifiedRoundOfSixteen.find((t) => t.id === team.id)
     return !!qualified
+  }
+
+  public isSameSpot(team: any): boolean {
+    let qualified = this.qualifiedRoundOfSixteen.find((t) => t.id === team.id)
+    if(qualified && qualified.group === team.group) {
+      return true
+    }
+    return false
   }
 
 
