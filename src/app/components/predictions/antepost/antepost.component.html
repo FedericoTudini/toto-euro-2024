@@ -52,7 +52,7 @@
         <span>Squadra Clean Sheet (gironi)</span>
       </div>
     <mat-card-content style="border-radius: 20px; background-color: #222232; align-items: center; justify-content: center; padding-top: 16px;">
-      <div *ngFor="let player of playerPredictions" class="prediction-container fk-row">
+      <div *ngFor="let player of playerPredictions" class="prediction-container fk-row" [class.background-green]="player.name === 'Giovanni'">
         <span class="player-tag">{{player.name}}</span>
         <div class="fk-row" style="align-items: center; justify-content: center">
           <span class="prediction-tag">{{ player.predictions.cleanSheetGroupStage.name }}</span>

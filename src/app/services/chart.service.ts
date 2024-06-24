@@ -28,6 +28,11 @@ export class ChartService {
       "name": "Spain",
       "group": "1B"
     },
+    {
+      "id": 784,
+      "name": "Italy",
+      "group": "2B"
+    },
   ]
 
   constructor() { }

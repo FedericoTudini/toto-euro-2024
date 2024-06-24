@@ -832,7 +832,7 @@ export let playersData: Players[] = [
     {
         "id": 2,
         "name": "Giovanni",
-        "score": 0,
+        "score": 15,
         "esiti": 0,
         "risultati": 0,
         "predictions": {
