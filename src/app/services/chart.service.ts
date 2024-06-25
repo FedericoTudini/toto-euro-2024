@@ -33,6 +33,16 @@ export class ChartService {
       "name": "Italy",
       "group": "2B"
     },
+    {
+      "id": 816,
+      "name": "Austria",
+      "group": "1D"
+    },
+    {
+      "id": 773,
+      "name": "France",
+      "group": "2D"
+    },
   ]
 
   constructor() { }
