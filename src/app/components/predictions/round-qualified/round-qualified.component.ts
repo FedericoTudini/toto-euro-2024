@@ -26,8 +26,11 @@ export class RoundQualifiedComponent {
     return risultato;
   }
 
-  isQualified(team: any) {
-    return this.chartService.isTeamQualified(team)
+  isQualifiedOttavi(team: any) {
+    return this.chartService.isTeamQualifiedOttavi(team)
+  }
+  isQualifiedQuarti(team: any) {
+    return this.chartService.isTeamQualifiedQuarti(team)
   }
 
   isSameSpot(team: any) {

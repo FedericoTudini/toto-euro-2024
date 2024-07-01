@@ -1,9 +1,9 @@
 <div >
   <div>
-    <h1 style="color: #fff; font-weight: 500; margin: 0px 10px; font-size: 1.6rem;">Oggi</h1>
+    <h1 style="color: #fff; font-weight: 500; margin: 0px 10px; font-size: 1.6rem;">Ottavi di Finale</h1>
   </div>
   <div class="card-container">
-    <mat-card *ngFor="let match of todaysMatches" class="example-card">
+    <mat-card *ngFor="let match of lastSixteenMatches" class="example-card">
       <mat-card-content>
         <div style="height: 20px; display: flex;flex-direction: row; justify-content: center;"><span style="color: white; font-size: 11px;">{{match.status | transformStatus:match }}</span></div>
         <div class="column-container">
@@ -19,6 +19,9 @@
             <p style="font-size: 2.3em; margin: 0px 0px">{{ match.score.fullTime.home ? match.score.fullTime.home : 0}}</p>
             <p style="font-size: 0.9em; margin: 0px 0px">:</p>
             <p style="font-size: 2.3em; margin: 0px 0px">{{ match.score.fullTime.away ? match.score.fullTime.away : 0}}</p>
+            <div *ngIf="match.score.regularTime">
+              <p style="font-size: 0.9em; margin: 0px 0px">{{match.score.regularTime.home}} : {{match.score.regularTime.away}}</p>
+            </div>
           </div>
           <div class="side-column column">
             <div id="container">
@@ -49,12 +52,12 @@
               <div
                 style="padding: 0px 5px; border-radius: 5px"
                 [style.backgroundColor]="
-                  calculateColorScore(match, player.predictions?.groupStage!)
+                  calculateColorScoreKnockout(match, player.predictions?.lastSixteen)
                 "
               >
                 <p>
                   {{
-                    getPlayerPrediction(match.id, player.predictions?.groupStage!)
+                    getPlayerPrediction(match.id, player.predictions?.lastSixteen!)
                   }}
                 </p>
               </div>
@@ -71,6 +74,9 @@
     </mat-card>
   </div>
   <mat-divider style="margin-bottom: 20px"></mat-divider>
+  <div>
+    <h1 style="color: #fff; font-weight: 500; margin: 0px 10px; font-size: 1.6rem;">Fase a Gironi</h1>
+  </div>
   <div class="card-container">
   <mat-card *ngFor="let match of matches" class="example-card">
     <mat-card-content>

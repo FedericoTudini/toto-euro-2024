@@ -10,5 +10,6 @@ export interface Predictions {
     cleanSheetGroupStage: any,
     moreScorers: any,
     moreGoalsGroupStage: any,
-    groupWithMoreGoals: string 
+    groupWithMoreGoals: string,
+    lastSixteen: any[]
 }

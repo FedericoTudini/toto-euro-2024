@@ -15,6 +15,8 @@ export class GroupStageMatchesComponent {
   public playerPredictions: any[] = playersData;
   @Input()
   public todaysMatches!: any[];
+  @Input()
+  public lastSixteenMatches!: any[];
 
   constructor(private matchesService: MatchesService) {
    }
@@ -47,12 +49,45 @@ export class GroupStageMatchesComponent {
     }
   }
 
+  public calculateColorScoreKnockout(match: any, matchesPredictions: any[]) {
+    if (!matchesPredictions)  return 'black'
+    let matchPrediction: any = matchesPredictions.find((m: any) => m.id === match.id)
+    if (!match)  return 'black'
+    if (!["IN_PLAY", "PAUSED", "FINISHED"].includes(match.status)) {
+      return "transparent"
+    }
+    else {
+      if (this.isSameWinner(match, matchPrediction) && this.isSameScore(match, matchPrediction)) {
+        return "green"
+      }
+      if (this.isSameWinner(match, matchPrediction) || this.isSameScore(match, matchPrediction)) {
+        return "#ff7900"
+      }
+      return "red"
+      /* if (this.isSameWinner(match, matchPrediction)) {
+        if (this.isSameScore(match, matchPrediction)) {
+          return "green"
+        }
+        else {
+          return "#ff7900"
+        }
+      }
+      else {
+        return "red"
+      } */
+    }
+  }
+
   public isSameWinner(match: any, matchPrediction: any): boolean {
     return match.score.winner === matchPrediction.score.winner ? true : false
   }
 
   public isSameScore(match: any, matchPrediction: any): boolean {
-    return match.score.fullTime.home === parseInt(matchPrediction.score.fullTime.home) && match.score.fullTime.away === parseInt(matchPrediction.score.fullTime.away) ? true : false
+    let score = match.score.fullTime;
+    if (match.score.regularTime) {
+      score = match.score.regularTime
+    }
+    return score.home === parseInt(matchPrediction.score.fullTime.home) && score.away === parseInt(matchPrediction.score.fullTime.away) ? true : false
   }
 
 }

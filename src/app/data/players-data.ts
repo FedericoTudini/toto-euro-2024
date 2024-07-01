@@ -658,6 +658,153 @@ export let playersData: Players[] = [
                     }
                 }
             ],
+            "lastSixteen": [
+                {
+                    "id": 428791,
+                    "homeTeam": {
+                        "id": 788,
+                        "name": "Switzerland"
+                    },
+                    "awayTeam": {
+                        "id": 784,
+                        "name": "Italy"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "0",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428792,
+                    "homeTeam": {
+                        "id": 759,
+                        "name": "Germany"
+                    },
+                    "awayTeam": {
+                        "id": 782,
+                        "name": "Denmark"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428789,
+                    "homeTeam": {
+                        "id": 770,
+                        "name": "England"
+                    },
+                    "awayTeam": {
+                        "id": 768,
+                        "name": "Slovakia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428790,
+                    "homeTeam": {
+                        "id": 760,
+                        "name": "Spain"
+                    },
+                    "awayTeam": {
+                        "id": 1978,
+                        "name": "Georgia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428787,
+                    "homeTeam": {
+                        "id": 773,
+                        "name": "France"
+                    },
+                    "awayTeam": {
+                        "id": 805,
+                        "name": "Belgium"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428788,
+                    "homeTeam": {
+                        "id": 765,
+                        "name": "Portugal"
+                    },
+                    "awayTeam": {
+                        "id": 777,
+                        "name": "Slovenia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428786,
+                    "homeTeam": {
+                        "id": 811,
+                        "name": "Romania"
+                    },
+                    "awayTeam": {
+                        "id": 8601,
+                        "name": "Netherlands"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "0",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428785,
+                    "homeTeam": {
+                        "id": 816,
+                        "name": "Austria"
+                    },
+                    "awayTeam": {
+                        "id": 803,
+                        "name": "Turkey"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
+                        }
+                    }
+                }
+            ],
+
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 760,
@@ -1482,6 +1629,152 @@ export let playersData: Players[] = [
                         "fullTime": {
                             "home": "0",
                             "away": "3"
+                        }
+                    }
+                }
+            ],
+            "lastSixteen": [
+                {
+                    "id": 428791,
+                    "homeTeam": {
+                        "id": 788,
+                        "name": "Switzerland"
+                    },
+                    "awayTeam": {
+                        "id": 784,
+                        "name": "Italy"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428792,
+                    "homeTeam": {
+                        "id": 759,
+                        "name": "Germany"
+                    },
+                    "awayTeam": {
+                        "id": 782,
+                        "name": "Denmark"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428789,
+                    "homeTeam": {
+                        "id": 770,
+                        "name": "England"
+                    },
+                    "awayTeam": {
+                        "id": 768,
+                        "name": "Slovakia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428790,
+                    "homeTeam": {
+                        "id": 760,
+                        "name": "Spain"
+                    },
+                    "awayTeam": {
+                        "id": 1978,
+                        "name": "Georgia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428787,
+                    "homeTeam": {
+                        "id": 773,
+                        "name": "France"
+                    },
+                    "awayTeam": {
+                        "id": 805,
+                        "name": "Belgium"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428788,
+                    "homeTeam": {
+                        "id": 765,
+                        "name": "Portugal"
+                    },
+                    "awayTeam": {
+                        "id": 777,
+                        "name": "Slovenia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428786,
+                    "homeTeam": {
+                        "id": 811,
+                        "name": "Romania"
+                    },
+                    "awayTeam": {
+                        "id": 8601,
+                        "name": "Netherlands"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428785,
+                    "homeTeam": {
+                        "id": 816,
+                        "name": "Austria"
+                    },
+                    "awayTeam": {
+                        "id": 803,
+                        "name": "Turkey"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "2"
                         }
                     }
                 }
@@ -2314,6 +2607,154 @@ export let playersData: Players[] = [
                     }
                 }
             ],
+
+            "lastSixteen": [
+                {
+                    "id": 428791,
+                    "homeTeam": {
+                        "id": 788,
+                        "name": "Switzerland"
+                    },
+                    "awayTeam": {
+                        "id": 784,
+                        "name": "Italy"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428792,
+                    "homeTeam": {
+                        "id": 759,
+                        "name": "Germany"
+                    },
+                    "awayTeam": {
+                        "id": 782,
+                        "name": "Denmark"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428789,
+                    "homeTeam": {
+                        "id": 770,
+                        "name": "England"
+                    },
+                    "awayTeam": {
+                        "id": 768,
+                        "name": "Slovakia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428790,
+                    "homeTeam": {
+                        "id": 760,
+                        "name": "Spain"
+                    },
+                    "awayTeam": {
+                        "id": 1978,
+                        "name": "Georgia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428787,
+                    "homeTeam": {
+                        "id": 773,
+                        "name": "France"
+                    },
+                    "awayTeam": {
+                        "id": 805,
+                        "name": "Belgium"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "2"
+                        }
+                    }
+                },
+                {
+                    "id": 428788,
+                    "homeTeam": {
+                        "id": 765,
+                        "name": "Portugal"
+                    },
+                    "awayTeam": {
+                        "id": 777,
+                        "name": "Slovenia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428786,
+                    "homeTeam": {
+                        "id": 811,
+                        "name": "Romania"
+                    },
+                    "awayTeam": {
+                        "id": 8601,
+                        "name": "Netherlands"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428785,
+                    "homeTeam": {
+                        "id": 816,
+                        "name": "Austria"
+                    },
+                    "awayTeam": {
+                        "id": 803,
+                        "name": "Turkey"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                }
+            ],
+
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 760,
@@ -3137,6 +3578,152 @@ export let playersData: Players[] = [
                         "winner": "AWAY_TEAM",
                         "fullTime": {
                             "home": "0",
+                            "away": "1"
+                        }
+                    }
+                }
+            ],
+            "lastSixteen": [
+                {
+                    "id": 428791,
+                    "homeTeam": {
+                        "id": 788,
+                        "name": "Switzerland"
+                    },
+                    "awayTeam": {
+                        "id": 784,
+                        "name": "Italy"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "8",
+                            "away": "8"
+                        }
+                    }
+                },
+                {
+                    "id": 428792,
+                    "homeTeam": {
+                        "id": 759,
+                        "name": "Germany"
+                    },
+                    "awayTeam": {
+                        "id": 782,
+                        "name": "Denmark"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "6",
+                            "away": "9"
+                        }
+                    }
+                },
+                {
+                    "id": 428789,
+                    "homeTeam": {
+                        "id": 770,
+                        "name": "England"
+                    },
+                    "awayTeam": {
+                        "id": 768,
+                        "name": "Slovakia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428790,
+                    "homeTeam": {
+                        "id": 760,
+                        "name": "Spain"
+                    },
+                    "awayTeam": {
+                        "id": 1978,
+                        "name": "Georgia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428787,
+                    "homeTeam": {
+                        "id": 773,
+                        "name": "France"
+                    },
+                    "awayTeam": {
+                        "id": 805,
+                        "name": "Belgium"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428788,
+                    "homeTeam": {
+                        "id": 765,
+                        "name": "Portugal"
+                    },
+                    "awayTeam": {
+                        "id": 777,
+                        "name": "Slovenia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428786,
+                    "homeTeam": {
+                        "id": 811,
+                        "name": "Romania"
+                    },
+                    "awayTeam": {
+                        "id": 8601,
+                        "name": "Netherlands"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428785,
+                    "homeTeam": {
+                        "id": 816,
+                        "name": "Austria"
+                    },
+                    "awayTeam": {
+                        "id": 803,
+                        "name": "Turkey"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
                             "away": "1"
                         }
                     }
@@ -3970,6 +4557,152 @@ export let playersData: Players[] = [
                     }
                 }
             ],
+            "lastSixteen": [
+                {
+                    "id": 428791,
+                    "homeTeam": {
+                        "id": 788,
+                        "name": "Switzerland"
+                    },
+                    "awayTeam": {
+                        "id": 784,
+                        "name": "Italy"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "0",
+                            "away": "2"
+                        }
+                    }
+                },
+                {
+                    "id": 428792,
+                    "homeTeam": {
+                        "id": 759,
+                        "name": "Germany"
+                    },
+                    "awayTeam": {
+                        "id": 782,
+                        "name": "Denmark"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428789,
+                    "homeTeam": {
+                        "id": 770,
+                        "name": "England"
+                    },
+                    "awayTeam": {
+                        "id": 768,
+                        "name": "Slovakia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428790,
+                    "homeTeam": {
+                        "id": 760,
+                        "name": "Spain"
+                    },
+                    "awayTeam": {
+                        "id": 1978,
+                        "name": "Georgia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428787,
+                    "homeTeam": {
+                        "id": 773,
+                        "name": "France"
+                    },
+                    "awayTeam": {
+                        "id": 805,
+                        "name": "Belgium"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428788,
+                    "homeTeam": {
+                        "id": 765,
+                        "name": "Portugal"
+                    },
+                    "awayTeam": {
+                        "id": 777,
+                        "name": "Slovenia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428786,
+                    "homeTeam": {
+                        "id": 811,
+                        "name": "Romania"
+                    },
+                    "awayTeam": {
+                        "id": 8601,
+                        "name": "Netherlands"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "2"
+                        }
+                    }
+                },
+                {
+                    "id": 428785,
+                    "homeTeam": {
+                        "id": 816,
+                        "name": "Austria"
+                    },
+                    "awayTeam": {
+                        "id": 803,
+                        "name": "Turkey"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "2"
+                        }
+                    }
+                }
+            ],
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 760,
@@ -4794,6 +5527,152 @@ export let playersData: Players[] = [
                         "fullTime": {
                             "home": "0",
                             "away": "4"
+                        }
+                    }
+                }
+            ],
+            "lastSixteen": [
+                {
+                    "id": 428791,
+                    "homeTeam": {
+                        "id": 788,
+                        "name": "Switzerland"
+                    },
+                    "awayTeam": {
+                        "id": 784,
+                        "name": "Italy"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428792,
+                    "homeTeam": {
+                        "id": 759,
+                        "name": "Germany"
+                    },
+                    "awayTeam": {
+                        "id": 782,
+                        "name": "Denmark"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428789,
+                    "homeTeam": {
+                        "id": 770,
+                        "name": "England"
+                    },
+                    "awayTeam": {
+                        "id": 768,
+                        "name": "Slovakia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428790,
+                    "homeTeam": {
+                        "id": 760,
+                        "name": "Spain"
+                    },
+                    "awayTeam": {
+                        "id": 1978,
+                        "name": "Georgia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428787,
+                    "homeTeam": {
+                        "id": 773,
+                        "name": "France"
+                    },
+                    "awayTeam": {
+                        "id": 805,
+                        "name": "Belgium"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428788,
+                    "homeTeam": {
+                        "id": 765,
+                        "name": "Portugal"
+                    },
+                    "awayTeam": {
+                        "id": 777,
+                        "name": "Slovenia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428786,
+                    "homeTeam": {
+                        "id": 811,
+                        "name": "Romania"
+                    },
+                    "awayTeam": {
+                        "id": 8601,
+                        "name": "Netherlands"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "2"
+                        }
+                    }
+                },
+                {
+                    "id": 428785,
+                    "homeTeam": {
+                        "id": 816,
+                        "name": "Austria"
+                    },
+                    "awayTeam": {
+                        "id": 803,
+                        "name": "Turkey"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
                         }
                     }
                 }
@@ -5626,6 +6505,152 @@ export let playersData: Players[] = [
                     }
                 }
             ],
+            "lastSixteen": [
+                {
+                    "id": 428791,
+                    "homeTeam": {
+                        "id": 788,
+                        "name": "Switzerland"
+                    },
+                    "awayTeam": {
+                        "id": 784,
+                        "name": "Italy"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "0",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428792,
+                    "homeTeam": {
+                        "id": 759,
+                        "name": "Germany"
+                    },
+                    "awayTeam": {
+                        "id": 782,
+                        "name": "Denmark"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428789,
+                    "homeTeam": {
+                        "id": 770,
+                        "name": "England"
+                    },
+                    "awayTeam": {
+                        "id": 768,
+                        "name": "Slovakia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428790,
+                    "homeTeam": {
+                        "id": 760,
+                        "name": "Spain"
+                    },
+                    "awayTeam": {
+                        "id": 1978,
+                        "name": "Georgia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428787,
+                    "homeTeam": {
+                        "id": 773,
+                        "name": "France"
+                    },
+                    "awayTeam": {
+                        "id": 805,
+                        "name": "Belgium"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428788,
+                    "homeTeam": {
+                        "id": 765,
+                        "name": "Portugal"
+                    },
+                    "awayTeam": {
+                        "id": 777,
+                        "name": "Slovenia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428786,
+                    "homeTeam": {
+                        "id": 811,
+                        "name": "Romania"
+                    },
+                    "awayTeam": {
+                        "id": 8601,
+                        "name": "Netherlands"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "0",
+                            "away": "2"
+                        }
+                    }
+                },
+                {
+                    "id": 428785,
+                    "homeTeam": {
+                        "id": 816,
+                        "name": "Austria"
+                    },
+                    "awayTeam": {
+                        "id": 803,
+                        "name": "Turkey"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "0"
+                        }
+                    }
+                }
+            ],
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 760,
@@ -6454,6 +7479,152 @@ export let playersData: Players[] = [
                     }
                 }
             ],
+            "lastSixteen": [
+                {
+                    "id": 428791,
+                    "homeTeam": {
+                        "id": 788,
+                        "name": "Switzerland"
+                    },
+                    "awayTeam": {
+                        "id": 784,
+                        "name": "Italy"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "0",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428792,
+                    "homeTeam": {
+                        "id": 759,
+                        "name": "Germany"
+                    },
+                    "awayTeam": {
+                        "id": 782,
+                        "name": "Denmark"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428789,
+                    "homeTeam": {
+                        "id": 770,
+                        "name": "England"
+                    },
+                    "awayTeam": {
+                        "id": 768,
+                        "name": "Slovakia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428790,
+                    "homeTeam": {
+                        "id": 760,
+                        "name": "Spain"
+                    },
+                    "awayTeam": {
+                        "id": 1978,
+                        "name": "Georgia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428787,
+                    "homeTeam": {
+                        "id": 773,
+                        "name": "France"
+                    },
+                    "awayTeam": {
+                        "id": 805,
+                        "name": "Belgium"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428788,
+                    "homeTeam": {
+                        "id": 765,
+                        "name": "Portugal"
+                    },
+                    "awayTeam": {
+                        "id": 777,
+                        "name": "Slovenia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428786,
+                    "homeTeam": {
+                        "id": 811,
+                        "name": "Romania"
+                    },
+                    "awayTeam": {
+                        "id": 8601,
+                        "name": "Netherlands"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "0",
+                            "away": "2"
+                        }
+                    }
+                },
+                {
+                    "id": 428785,
+                    "homeTeam": {
+                        "id": 816,
+                        "name": "Austria"
+                    },
+                    "awayTeam": {
+                        "id": 803,
+                        "name": "Turkey"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
+                        }
+                    }
+                }
+            ],
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 784,
@@ -7272,6 +8443,153 @@ export let playersData: Players[] = [
                     "awayTeam": {
                         "id": 765,
                         "name": "Portugal"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "2"
+                        }
+                    }
+                }
+            ],
+
+            "lastSixteen": [
+                {
+                    "id": 428791,
+                    "homeTeam": {
+                        "id": 788,
+                        "name": "Switzerland"
+                    },
+                    "awayTeam": {
+                        "id": 784,
+                        "name": "Italy"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "2"
+                        }
+                    }
+                },
+                {
+                    "id": 428792,
+                    "homeTeam": {
+                        "id": 759,
+                        "name": "Germany"
+                    },
+                    "awayTeam": {
+                        "id": 782,
+                        "name": "Denmark"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428789,
+                    "homeTeam": {
+                        "id": 770,
+                        "name": "England"
+                    },
+                    "awayTeam": {
+                        "id": 768,
+                        "name": "Slovakia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428790,
+                    "homeTeam": {
+                        "id": 760,
+                        "name": "Spain"
+                    },
+                    "awayTeam": {
+                        "id": 1978,
+                        "name": "Georgia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428787,
+                    "homeTeam": {
+                        "id": 773,
+                        "name": "France"
+                    },
+                    "awayTeam": {
+                        "id": 805,
+                        "name": "Belgium"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428788,
+                    "homeTeam": {
+                        "id": 765,
+                        "name": "Portugal"
+                    },
+                    "awayTeam": {
+                        "id": 777,
+                        "name": "Slovenia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428786,
+                    "homeTeam": {
+                        "id": 811,
+                        "name": "Romania"
+                    },
+                    "awayTeam": {
+                        "id": 8601,
+                        "name": "Netherlands"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "2"
+                        }
+                    }
+                },
+                {
+                    "id": 428785,
+                    "homeTeam": {
+                        "id": 816,
+                        "name": "Austria"
+                    },
+                    "awayTeam": {
+                        "id": 803,
+                        "name": "Turkey"
                     },
                     "score": {
                         "winner": "AWAY_TEAM",
@@ -8110,6 +9428,154 @@ export let playersData: Players[] = [
                     }
                 }
             ],
+
+            "lastSixteen": [
+                {
+                    "id": 428791,
+                    "homeTeam": {
+                        "id": 788,
+                        "name": "Switzerland"
+                    },
+                    "awayTeam": {
+                        "id": 784,
+                        "name": "Italy"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428792,
+                    "homeTeam": {
+                        "id": 759,
+                        "name": "Germany"
+                    },
+                    "awayTeam": {
+                        "id": 782,
+                        "name": "Denmark"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428789,
+                    "homeTeam": {
+                        "id": 770,
+                        "name": "England"
+                    },
+                    "awayTeam": {
+                        "id": 768,
+                        "name": "Slovakia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428790,
+                    "homeTeam": {
+                        "id": 760,
+                        "name": "Spain"
+                    },
+                    "awayTeam": {
+                        "id": 1978,
+                        "name": "Georgia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428787,
+                    "homeTeam": {
+                        "id": 773,
+                        "name": "France"
+                    },
+                    "awayTeam": {
+                        "id": 805,
+                        "name": "Belgium"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428788,
+                    "homeTeam": {
+                        "id": 765,
+                        "name": "Portugal"
+                    },
+                    "awayTeam": {
+                        "id": 777,
+                        "name": "Slovenia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428786,
+                    "homeTeam": {
+                        "id": 811,
+                        "name": "Romania"
+                    },
+                    "awayTeam": {
+                        "id": 8601,
+                        "name": "Netherlands"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "2"
+                        }
+                    }
+                },
+                {
+                    "id": 428785,
+                    "homeTeam": {
+                        "id": 816,
+                        "name": "Austria"
+                    },
+                    "awayTeam": {
+                        "id": 803,
+                        "name": "Turkey"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
+                        }
+                    }
+                }
+            ],
+
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 760,
@@ -8938,6 +10404,152 @@ export let playersData: Players[] = [
                     }
                 }
             ],
+            "lastSixteen": [
+                {
+                    "id": 428791,
+                    "homeTeam": {
+                        "id": 788,
+                        "name": "Switzerland"
+                    },
+                    "awayTeam": {
+                        "id": 784,
+                        "name": "Italy"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "0",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428792,
+                    "homeTeam": {
+                        "id": 759,
+                        "name": "Germany"
+                    },
+                    "awayTeam": {
+                        "id": 782,
+                        "name": "Denmark"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428789,
+                    "homeTeam": {
+                        "id": 770,
+                        "name": "England"
+                    },
+                    "awayTeam": {
+                        "id": 768,
+                        "name": "Slovakia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428790,
+                    "homeTeam": {
+                        "id": 760,
+                        "name": "Spain"
+                    },
+                    "awayTeam": {
+                        "id": 1978,
+                        "name": "Georgia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428787,
+                    "homeTeam": {
+                        "id": 773,
+                        "name": "France"
+                    },
+                    "awayTeam": {
+                        "id": 805,
+                        "name": "Belgium"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "3",
+                            "away": "2"
+                        }
+                    }
+                },
+                {
+                    "id": 428788,
+                    "homeTeam": {
+                        "id": 765,
+                        "name": "Portugal"
+                    },
+                    "awayTeam": {
+                        "id": 777,
+                        "name": "Slovenia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428786,
+                    "homeTeam": {
+                        "id": 811,
+                        "name": "Romania"
+                    },
+                    "awayTeam": {
+                        "id": 8601,
+                        "name": "Netherlands"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "0",
+                            "away": "2"
+                        }
+                    }
+                },
+                {
+                    "id": 428785,
+                    "homeTeam": {
+                        "id": 816,
+                        "name": "Austria"
+                    },
+                    "awayTeam": {
+                        "id": 803,
+                        "name": "Turkey"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "2"
+                        }
+                    }
+                }
+            ],
             "qualifiedRoundOfSixteen": [
                 {
                     "id": 760,
@@ -9382,8 +10994,8 @@ export let playersData: Players[] = [
                     "score": {
                         "winner": "AWAY_TEAM",
                         "fullTime": {
-                            "home": "0",
-                            "away": "4"
+                            "home": "1",
+                            "away": "1"
                         }
                     }
                 },
@@ -9762,6 +11374,152 @@ export let playersData: Players[] = [
                         "fullTime": {
                             "home": "0",
                             "away": "4"
+                        }
+                    }
+                }
+            ],
+            "lastSixteen": [
+                {
+                    "id": 428791,
+                    "homeTeam": {
+                        "id": 788,
+                        "name": "Switzerland"
+                    },
+                    "awayTeam": {
+                        "id": 784,
+                        "name": "Italy"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "0",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428792,
+                    "homeTeam": {
+                        "id": 759,
+                        "name": "Germany"
+                    },
+                    "awayTeam": {
+                        "id": 782,
+                        "name": "Denmark"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428789,
+                    "homeTeam": {
+                        "id": 770,
+                        "name": "England"
+                    },
+                    "awayTeam": {
+                        "id": 768,
+                        "name": "Slovakia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428790,
+                    "homeTeam": {
+                        "id": 760,
+                        "name": "Spain"
+                    },
+                    "awayTeam": {
+                        "id": 1978,
+                        "name": "Georgia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "0"
+                        }
+                    }
+                },
+                {
+                    "id": 428787,
+                    "homeTeam": {
+                        "id": 773,
+                        "name": "France"
+                    },
+                    "awayTeam": {
+                        "id": 805,
+                        "name": "Belgium"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428788,
+                    "homeTeam": {
+                        "id": 765,
+                        "name": "Portugal"
+                    },
+                    "awayTeam": {
+                        "id": 777,
+                        "name": "Slovenia"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "2",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428786,
+                    "homeTeam": {
+                        "id": 811,
+                        "name": "Romania"
+                    },
+                    "awayTeam": {
+                        "id": 8601,
+                        "name": "Netherlands"
+                    },
+                    "score": {
+                        "winner": "AWAY_TEAM",
+                        "fullTime": {
+                            "home": "0",
+                            "away": "1"
+                        }
+                    }
+                },
+                {
+                    "id": 428785,
+                    "homeTeam": {
+                        "id": 816,
+                        "name": "Austria"
+                    },
+                    "awayTeam": {
+                        "id": 803,
+                        "name": "Turkey"
+                    },
+                    "score": {
+                        "winner": "HOME_TEAM",
+                        "fullTime": {
+                            "home": "1",
+                            "away": "1"
                         }
                     }
                 }
