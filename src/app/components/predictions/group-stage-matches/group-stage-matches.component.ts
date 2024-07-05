@@ -17,12 +17,14 @@ export class GroupStageMatchesComponent {
   public todaysMatches!: any[];
   @Input()
   public lastSixteenMatches!: any[];
+  @Input()
+  public quartersMatches!: any[];
 
   constructor(private matchesService: MatchesService) {
    }
 
   getPlayerPrediction(id: number, matchesPredictions: any[]) {
-    if (!matchesPredictions) return 'error'
+    if (!matchesPredictions) return 'N.D.'
     let matchPrediction: any = matchesPredictions.find((match) => match.id === id)
     return `${matchPrediction.score.fullTime.home}:${matchPrediction.score.fullTime.away}`
   }

@@ -4,6 +4,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { ResultsComponent } from './components/results/results.component';
 import { PredictionsComponent } from './components/predictions/predictions.component';
 import { ScorersComponent } from './components/scorers/scorers.component';
+import { PointsDetailComponent } from './components/points-detail/points-detail.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
       {
         path: 'scorers',
         component: ScorersComponent
+      },
+      {
+        path: 'points',
+        component: PointsDetailComponent
       }
     ]
   }

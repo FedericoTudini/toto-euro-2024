@@ -1,0 +1,78 @@
+{
+    
+    "quarters": [
+        {
+
+            "id": 495401,
+            "homeTeam": {
+                "id": 760,
+                "name": "Spain"
+            },
+            "awayTeam": {
+                "id": 759,
+                "name": "Germany"
+            },
+            "score": {
+                "winner": "_TEAM", 
+                "fullTime": {
+                    "home": "0",
+                    "away": "0"
+                }
+            }
+        },
+        {
+            "id": 495402,
+            "homeTeam": {
+                "id": 765,
+                "name": "Portugal"
+            },
+            "awayTeam": {
+                "id": 773,
+                "name": "France"
+            },
+            "score": {
+                "winner": "_TEAM",
+                "fullTime": {
+                    "home": "0",
+                    "away": "0"
+                }
+            }
+        },
+        {
+            "id": 495403,
+            "homeTeam": {
+                "id": 770,
+                "name": "England"
+            },
+            "awayTeam": {
+                "id": 788,
+                "name": "Switzerland"
+            },
+            "score": {
+                "winner": "_TEAM",
+                "fullTime": {
+                    "home": "0",
+                    "away": "0"
+                }
+            }
+        },
+        {
+            "id": 495404,
+            "homeTeam": {
+                "id": 8601,
+                "name": "Netherlands"
+            },
+            "awayTeam": {
+                "id": 803,
+                "name": "Turkey"
+            },
+            "score": {
+                "winner": "_TEAM",
+                "fullTime": {
+                    "home": "0",
+                    "away": "0"
+                }
+            }
+        }
+    ]
+}

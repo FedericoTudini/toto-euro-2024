@@ -15,6 +15,7 @@ export class PredictionsComponent implements OnInit {
   public playerPredictions: any[] = playersData;
   todaysMatches!: any[];
   lastSixteenMatches: any;
+  quartersMatches!: any[];
 
   constructor(private matchesService: MatchesService) {
 
@@ -29,6 +30,7 @@ export class PredictionsComponent implements OnInit {
       (data: any) => {
         this.matches = data.matches.filter((m: any) => m.stage === 'GROUP_STAGE')
         this.lastSixteenMatches = data.matches.filter((m: any) => m.stage === 'LAST_16')
+        this.quartersMatches = data.matches.filter((m: any) => m.stage === 'QUARTER_FINALS')
         this.todaysMatches = this.matches.filter((m: any) => isSameDay(parseISO(m.utcDate), new Date()) ) 
 
         //console.log(this.matches)

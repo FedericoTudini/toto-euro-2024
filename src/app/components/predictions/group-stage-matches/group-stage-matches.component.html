@@ -1,5 +1,80 @@
 <div >
   <div>
+    <h1 style="color: #fff; font-weight: 500; margin: 0px 10px; font-size: 1.6rem;">Quarti di Finale</h1>
+  </div>
+  <div class="card-container">
+    <mat-card *ngFor="let match of quartersMatches" class="example-card">
+      <mat-card-content>
+        <div style="height: 20px; display: flex;flex-direction: row; justify-content: center;"><span style="color: white; font-size: 11px;">{{match.status | transformStatus:match }}</span></div>
+        <div class="column-container">
+          <div class="side-column column">
+            <div id="container">
+              <img src="../../../assets/png/{{ match.homeTeam.id }}.png" alt="" />
+            </div>
+            <p style="font-size: 1rem; margin: 0px 0px">
+              {{ match.homeTeam.name }}
+            </p>
+          </div>
+          <div class="center-column column">
+            <p style="font-size: 2.3em; margin: 0px 0px">{{ match.score.fullTime.home ? match.score.fullTime.home : 0}}</p>
+            <p style="font-size: 0.9em; margin: 0px 0px">:</p>
+            <p style="font-size: 2.3em; margin: 0px 0px">{{ match.score.fullTime.away ? match.score.fullTime.away : 0}}</p>
+            <div *ngIf="match.score.regularTime">
+              <p style="font-size: 0.9em; margin: 0px 0px">{{match.score.regularTime.home}} : {{match.score.regularTime.away}}</p>
+            </div>
+          </div>
+          <div class="side-column column">
+            <div id="container">
+              <img src="../../../assets/png/{{ match.awayTeam.id }}.png" alt="" />
+            </div>
+            <p style="font-size: 1rem; margin: 0px 0px">
+              {{ match.awayTeam.name }}
+            </p>
+          </div>
+        </div>
+        <mat-divider style="padding: 5px 0px"></mat-divider>
+        <!-- Pronostici giocatori -->
+        <div class="players-grid">
+          <div
+            *ngFor="let player of playerPredictions"
+            class="prediction-container"
+          >
+            <div>
+              <p>{{ player.name }}</p>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+              "
+            >
+              <div
+                style="padding: 0px 5px; border-radius: 5px"
+                [style.backgroundColor]="
+                  calculateColorScoreKnockout(match, player.predictions?.quarters)
+                "
+              >
+                <p>
+                  {{
+                    getPlayerPrediction(match.id, player.predictions?.quarters!)
+                  }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-footer style="padding: 0px 50px; opacity: 0.5;">
+        <mat-progress-bar
+          *ngIf="match.status === 'IN_PLAY' || match.status === 'PAUSED'"
+          mode="indeterminate" style="margin-top: 10px; "
+        ></mat-progress-bar>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+  <mat-divider style="margin-bottom: 20px"></mat-divider>
+  <div>
     <h1 style="color: #fff; font-weight: 500; margin: 0px 10px; font-size: 1.6rem;">Ottavi di Finale</h1>
   </div>
   <div class="card-container">

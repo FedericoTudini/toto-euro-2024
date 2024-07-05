@@ -1,0 +1,32 @@
+<div *ngFor="let player of players">
+    <h5>{{player}}</h5>
+    <h6>Esiti: : {{playersMap.get(player).esitiCounter}}</h6>
+    <ul>
+      <li *ngFor="let esito of playersMap.get(player).esiti">{{ esito }}</li>
+    </ul>
+  
+    <h6>Risultati: : {{playersMap.get(player).risultatiCounter}}</h6>
+    <ul>
+      <li *ngFor="let risultato of playersMap.get(player).risultati">{{ risultato }}</li>
+    </ul>
+  
+    <h6>Ottavi: {{playersMap.get(player).ottaviCounter}}</h6>
+    <ul>
+      <li *ngFor="let ottavo of playersMap.get(player).ottavi">{{ ottavo }}</li>
+    </ul>
+  
+    <h6>Posizioni: {{playersMap.get(player).posizioniCounter}}</h6>
+    <ul>
+      <li *ngFor="let posizione of playersMap.get(player).posizioni">{{ posizione }}</li>
+    </ul>
+  
+    <h6>Quarti: {{playersMap.get(player).quartiCounter}}</h6>
+    <ul>
+      <li *ngFor="let quarto of playersMap.get(player).quarti">{{ quarto }}</li>
+    </ul>
+    <h6>Tot: {{playersMap.get(player).tot}}</h6>
+    <div>
+      <mat-divider style="padding: 5px 0px"></mat-divider>
+    </div>
+  </div>
+  

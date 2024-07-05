@@ -37,6 +37,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { TransformStatusPipe } from './pipes/transform-status.pipe';
 import { CacheInterceptorService } from './services/cache-interceptor.service';
 import { MatSortModule } from '@angular/material/sort';
+import { PointsDetailComponent } from './components/points-detail/points-detail.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { MatSortModule } from '@angular/material/sort';
     GroupStageMatchesComponent,
     RoundQualifiedComponent,
     AntepostComponent,
-    TransformStatusPipe
+    TransformStatusPipe,
+    PointsDetailComponent
     
   ],
   imports: [

@@ -11,5 +11,6 @@ export interface Predictions {
     moreScorers: any,
     moreGoalsGroupStage: any,
     groupWithMoreGoals: string,
-    lastSixteen: any[]
+    lastSixteen: any[],
+    quarters?: any[]
 }
